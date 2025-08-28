@@ -1,244 +1,621 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-            crossorigin="anonymous">
-        <style>
-           
 
-            
-             /* Navbar css start */
-            .navbar{
-                background-color:#66462f;  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        /* Navbar css start */
+        .navbar {
+            background-color: #66462f;
+        }
+
+        .navbar-brand {
+            color: burlywood !important;
+            font-size: 60px;
+            font-family: Comic Sans MS;
+        }
+
+        .nav-item a {
+            font-size: 18px;
+            color: white;
+            font-family: Comic Sans MS;
+        }
+
+        .nav-link:hover {
+
+            color: burlywood !important;
+            text-decoration: underline;
+        }
+
+        /* Navbar css end */
+        /* gallery section css start */
+        .gallery-title {
+            text-align: center;
+            margin: 40px 0;
+            color: #66462f;
+            ;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease, filter 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            filter: brightness(0.7);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #d2a679;
+            font-size: 1.1rem;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            opacity: 2;
+        }
+
+        /* gallery section CSS end */
+
+        /* footer css start */
+        .contact-info {
+            list-style: none;
+            color: black;
+            font-family: serif;
+        }
+
+        .opening-hours {
+            list-style: none;
+            color: black;
+            font-family: serif;
+        }
+
+        .quick-links {
+            list-style: none;
+            font-family: serif;
+            text-align: center;
+        }
+
+        .quick-links a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .quick-links a:hover {
+            text-decoration: underline;
+            color: #66462f;
+        }
+
+        .imp-links {
+            font-family: serif;
+        }
+
+        footer {
+            background-color: burlywood;
+
+        }
+
+
+
+        .social-media {
+            display: flex;
+            gap: 15px;
+            color: black;
+
+
+        }
+
+        .bi-instagram {
+            color: orangered;
+        }
+
+        .bi-facebook {
+            color: blue;
+        }
+
+        .bi-youtube {
+            color: red;
+        }
+
+        .bi-whatsapp {
+            color: green;
+        }
+
+        .connection {
+            padding: 10px;
+            text-align: center;
+            color: #66462f;
+        }
+
+        .connect {
+            text-align: center;
+        }
+
+        .info {
+            padding: 10px;
+            text-align: center;
+            color: #66462f;
+        }
+
+        .imp-links {
+            padding: 10px;
+            text-align: center;
+            color: #66462f;
+        }
+
+        /* Footer Css End */
+        /* Extra Small Devices up to 576px */
+        @media (max-width: 576px) {
+
+            .navbar-brand {
+                font-size: 28px;
+                /* Navbar brand smaller */
             }
-            .navbar-brand{
-                color: burlywood !important;
-                font-size: 60px;
-                font-family: Comic Sans MS;
+
+            .nav-item a {
+                font-size: 14px;
             }
-            .nav-item a{
+
+            .bg-img video {
+                width: 100%;
+                height: auto;
+            }
+
+            .img-info {
+                display: none;
+                /* Hide side image on small screens */
+            }
+
+            .aboutus,
+            .cafe-info,
+            .cafe-info2 {
+                text-align: center;
+                margin: 10px auto;
+                font-size: 16px;
+            }
+
+            .button,
+            .button2 {
+                display: block;
+                width: 80%;
+                margin: 10px auto;
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .we-are {
+                text-align: center;
+                font-size: 20px;
+                margin: 15px 0;
+            }
+
+            .count,
+            .count2,
+            .countries,
+            .countries2 {
+                text-align: center;
+            }
+
+            .cc-info {
+                font-size: 14px;
+                margin: 10px;
+                text-align: center;
+            }
+
+            .cc-img {
+                display: block;
+                margin: 0 auto;
+                width: 80%;
+                height: auto;
+            }
+
+            .varities {
+                flex-direction: column;
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .varities ul {
+                padding: 0;
+            }
+
+            footer {
+                text-align: center;
+            }
+
+            .quick-links {
+                text-align: center;
+                padding: 0;
+            }
+
+            .social-media {
+                justify-content: center;
+            }
+        }
+
+
+        /* Small Devices (Tablets) - 577px to 768px */
+        @media (min-width: 577px) and (max-width: 768px) {
+
+            .navbar-brand {
+                font-size: 32px;
+            }
+
+            .nav-item a {
+                font-size: 15px;
+            }
+
+            .aboutus,
+            .cafe-info {
+                text-align: center;
                 font-size: 18px;
-                color: white;
-                font-family: Comic Sans MS;
             }
-            
-            .nav-link:hover{
-               
-                color:  burlywood !important;
-                text-decoration: underline;
-            }
-            
-            /* Navbar css end */
-             /* footer css start */
-             .contact-info{
-                list-style: none;
-                color: black;
-                font-family: serif;
-            }
-            
-            .opening-hours{
-                list-style: none;
-                color: black;
-                 font-family: serif;
-            }
-            .quick-links{
-                list-style: none;
-                font-family: serif;
-                text-align: center;
-            }
-            .quick-links a{
-               text-decoration: none;
-               color: black;
-              
-            }
-            .quick-links a:hover{
-                text-decoration: underline;
-                color: #66462f;
-            }
-            .imp-links{
-                 font-family: serif;
-            }
-            
-            footer{
-                background-color: burlywood;
-                
-            }
-           
-           
-           
-            .social-media{
-                display: flex;
-                gap: 15px;
-                color: black;
-                
 
+            .button,
+            .button2 {
+                font-size: 15px;
+                padding: 12px;
             }
-            .bi-instagram{
-                color: orangered;
+
+            .cc-info {
+                font-size: 16px;
+                margin: 15px;
             }
-            .bi-facebook{
-                color: blue;
+
+            .varities {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
             }
-            .bi-youtube{
-                color: red;
+
+            .varities ul {
+                margin: 10px;
             }
-            .bi-whatsapp{
-                color: green;
+
+            .cc-img {
+                width: 70%;
+                margin: 10px auto;
+                display: block;
             }
-            .connection{
-                padding: 10px;
-                text-align: center;
-                color: #66462f;
+        }
+
+
+        /* Medium Devices (Laptops) - 769px to 992px */
+        @media (min-width: 769px) and (max-width: 992px) {
+
+            .navbar-brand {
+                font-size: 36px;
             }
-            .connect{
-                text-align: center;
+
+            .aboutus {
+                font-size: 24px;
             }
-            .info{
-                padding: 10px;
-                text-align: center;
-                color: #66462f;
+
+            .cafe-info {
+                font-size: 18px;
             }
-            .imp-links{
-                padding: 10px;
-                text-align: center;
-                color: #66462f;
+
+            .cc-info {
+                font-size: 18px;
             }
-            
-            /* Footer Css End */
+
+            .cc-img {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+
+        /* Large Devices (Desktops) - 993px and above */
+        @media (min-width: 993px) {
+            .navbar-brand {
+                font-size: 40px;
+            }
+
+            .cc-img {
+                width: 400px;
+            }
+        }
     </style>
-    </head>
-    <body>
-        <header>
-            <nav
-                class="navbar navbar-expand-lg  mt-0 border-body">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"
-                        style="font-size: 40px;">Corner-cup</a>
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse"
-                        id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page"
-                                    href="index.html">Home</a>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <nav class="navbar navbar-expand-lg  mt-0 border-body">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="font-size: 40px;">Corner-cup</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About
+                                Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="order-online.html">Order Online</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <main>
+        <!-- main section start -->
+        <section>
+            <div class="container">
+                <h2 class="gallery-title"> Gallery</h2>
+                <div class="row g-4">
+
+                    <!-- Gallery Items -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="gallery-item">
+                            <a href="https://images.unsplash.com/photo-1509042239860-f550ce710b93" data-lightbox="cafe"
+                                data-title="Fresh Brewed Coffee">
+                                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=400&fit=crop"
+                                    alt="Coffee">
+                            </a>
+                            <div class="gallery-caption">Fresh Brewed Coffee</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="gallery-item">
+                            <a href="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9" data-lightbox="cafe"
+                                data-title="Cozy Café Interiors">
+                                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400&h=400&fit=crop"
+                                    alt="Cafe Interior">
+                            </a>
+                            <div class="gallery-caption">Cozy Café Interiors</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="gallery-item">
+                            <a href="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" data-lightbox="cafe"
+                                data-title="Latte Art">
+                                <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=400&h=400&fit=crop"
+                                    alt="Latte Art">
+                            </a>
+                            <div class="gallery-caption">Latte Art</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="gallery-item">
+                            <a href="https://images.unsplash.com/photo-1504674900247-0877df9cc836" data-lightbox="cafe"
+                                data-title="Delicious Cakes">
+                                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=400&fit=crop"
+                                    alt="Cake">
+                            </a>
+
+                        </div>
+                        <div class="modal-body">
+                            <div class="gallery-caption">Delicious Cakes</div>
+                        </div>
+                        <div class="modal-body">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="gallery-item">
+                            <a href="https://images.unsplash.com/photo-1486427944299-d1955d23e34d" data-lightbox="cafe"
+                                data-title="Fresh Cookies">
+                                <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&h=400&fit=crop"
+                                    alt="Cookies">
+                            </a>
+                            <div class="gallery-caption">Fresh Cookies</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="gallery-item">
+                            <a href="https://images.unsplash.com/photo-1511920170033-f8396924c348" data-lightbox="cafe"
+                                data-title="Strong Espresso">
+                                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&h=400&fit=crop"
+                                    alt="Espresso">
+                            </a>
+                            <div class="gallery-caption">Strong Espresso</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="gallery-item">
+                            <a href="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" data-lightbox="cafe"
+                                data-title="Tasty Sandwiches">
+                                <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&h=400&fit=crop"
+                                    alt="Sandwich">
+                            </a>
+                            <div class="gallery-caption">Tasty Sandwiches</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="gallery-item">
+                            <a href="https://images.unsplash.com/photo-1528605248644-14dd04022da1" data-lightbox="cafe"
+                                data-title="Coffee Shop Vibes">
+                                <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=400&h=400&fit=crop"
+                                    alt="Coffee Shop">
+                            </a>
+                            <div class="gallery-caption">Coffee Shop Vibes</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="gallery-item">
+                            <a href="https://images.unsplash.com/photo-1509042239860-f550ce710b93" data-lightbox="cafe"
+                                data-title="Refreshing Tea">
+                                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=400&fit=crop"
+                                    alt="Tea">
+                            </a>
+                            <div class="gallery-caption">Refreshing Tea</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="gallery-item">
+                            <a href="https://images.unsplash.com/photo-1499636136210-6f4ee915583e" data-lightbox="cafe"
+                                data-title="Sweet Desserts">
+                                <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&h=400&fit=crop"
+                                    alt="Dessert">
+                            </a>
+                            <div class="gallery-caption">Sweet Desserts</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="gallery-item">
+                            <a href="https://images.unsplash.com/photo-1528605248644-14dd04022da1" data-lightbox="cafe"
+                                data-title="Dining Space">
+                                <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=400&h=400&fit=crop"
+                                    alt="Restaurant">
+                            </a>
+                            <div class="gallery-caption">Dining Space</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="gallery-item">
+                            <a href="https://images.unsplash.com/photo-1512568400610-62da28bc8a13" data-lightbox="cafe"
+                                data-title="Perfect Coffee Cup">
+                                <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?w=400&h=400&fit=crop"
+                                    alt="Coffee Cup">
+                            </a>
+                            <div class="gallery-caption">Perfect Coffee Cup</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- main section end -->
+    </main>
+
+    <!-- footer start -->
+    <footer>
+        <section class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="contact-info">
+                            <h4 class="info">Our Address<i class="bi bi-geo-alt-fill"></i></h4>
+                            <li class="address">Address :
+                                Corner-Cup Café <br>
+                                456, FC Road, Shivajinagar <br>
+                                Pune, Maharashtra - 411005 <br>
+                                Phone: +91 98765 43210 <br>
+                                Email: info@cornercup.com <br>
+
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="menu.html">Menu</a>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <ul class="opening-hours">
+                            <h4 class="connection">Connect With Us</h4>
+                            <li class="connect">
+                                <p><i class="bi bi-envelope"></i>
+                                    corner-cup@gmail.com</p>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="gallery.html">Gallery</a>
+                            <li class="connect">
+                                <p><i class="bi bi-envelope"></i>
+                                    support@gmail.com</p>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about-us.html">About
-                                    Us</a>
+                            <li class="connect">
+                                <h4>9 AM – 11 PM</h4>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="contact-us.html">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="order-online.html">Order Online</a>
+                            <li class="connect">
+                                <p>Mon-Sun</p>
                             </li>
                         </ul>
                     </div>
-                </div>
-            </nav>
-        </header>
+                    <div class="col-md-3">
+                        <h4 class="imp-links">Important Links</h4>
+                        <ul class="quick-links">
+                            <li><i class="bi bi-chevron-right"></i><a href="index.html">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="menu.html">Menu</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="gallery.html">Gallery</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="about-us.html">About U</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="contact-us.html">Contact Us</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="order-online.html">Order Online</a></li>
 
-        <footer>
-            <section class="mt-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <ul class="contact-info">
-                                <h4 class="info">Our Address<i
-                                        class="bi bi-geo-alt-fill"></i></h4>
-                                <li class="address">Address :
-                                    Corner-Cup Café <br>
-                                    456, FC Road, Shivajinagar <br>
-                                    Pune, Maharashtra - 411005 <br>
-                                    Phone: +91 98765 43210 <br>
-                                    Email: info@cornercup.com <br>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="imp-links">Social Handle's</h4>
+                        <ul class="quick-links">
+                            <li><i class="bi bi-instagram"> </i><a href="https://www.instagram.com/">Instagram</a>
+                            </li>
+                            <li><i class="bi bi-facebook"> </i><a href="https://www.facebook.com/">Facebook</a></li>
+                            <li><i class="bi bi-twitter-x"> </i><a href="https://www.twitter.com/">Twitter</a></li>
+                            <li><i class="bi bi-youtube"> </i><a href="https://www.youtube.com/">Youtube</a></li>
+                            <li><i class="bi bi-whatsapp"> </i><a href="whatsapp">Whatsapp</a></li>
+                            <hr>
+                            <p>Follow For Update's</p>
 
-                                </li>
-                            </ul>
-
-                        </div>
-
-                        <div class="col-md-3">
-
-                            <ul class="opening-hours">
-                                <h4 class="connection">Connect With Us</h4>
-                                <li class="connect"><p><i
-                                            class="bi bi-envelope"></i>
-                                        corner-cup@gmail.com</p></li>
-                                <li class="connect"><p><i
-                                            class="bi bi-envelope"></i>
-                                        support@gmail.com</p></li>
-                                <li class="connect"><h4>9 AM – 11 PM</h4></li>
-                                <li class="connect"><p>Mon-Sun</p></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <h4 class="imp-links">Important Links</h4>
-                            <ul class="quick-links">
-                                <li><i class="bi bi-chevron-right"></i><a
-                                        href="images/">Home</a></li>
-                                <li><i class="bi bi-chevron-right"></i><a
-                                        href="menu.html">Menu</a></li>
-                                <li><i class="bi bi-chevron-right"></i><a
-                                        href="gallery.html">Gallery</a></li>
-                                <li><i class="bi bi-chevron-right"></i><a
-                                        href="about-us.html">About U</a></li>
-                                <li><i class="bi bi-chevron-right"></i><a
-                                        href="contact-us.html">Contact Us</a></li>
-                                <li><i class="bi bi-chevron-right"></i><a
-                                        href="order-online.html">Order Online</a></li>
-
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <h4 class="imp-links">Social Handle's</h4>
-                            <ul class="quick-links">
-                                <li><i class="bi bi-instagram"> </i><a
-                                        href="https://www.instagram.com/">Instagram</a></li>
-                                <li><i class="bi bi-facebook"> </i><a
-                                        href="https://www.facebook.com/">Facebook</a></li>
-                                <li><i class="bi bi-twitter-x"> </i><a
-                                        href="https://www.twitter.com/">Twitter</a></li>
-                                <li><i class="bi bi-youtube"> </i><a
-                                        href="https://www.youtube.com/">Youtube</a></li>
-                                <li><i class="bi bi-whatsapp"> </i><a
-                                        href="whatsapp">Whatsapp</a></li>
-                                <hr>
-                                <p>Follow For Update's</p>
-
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
                 </div>
-            </section>
-        </footer>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-            crossorigin="anonymous"></script>
-    </body>
+            </div>
+        </section>
+    </footer>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+
 </html>
