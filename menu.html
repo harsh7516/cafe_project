@@ -1,244 +1,973 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-            crossorigin="anonymous">
-        <title></title>
-        <style>
-         
-      
 
-            
-              /* Navbar css start */
-            .navbar{
-                background-color:#66462f;  
-            }
-            .navbar-brand{
-                color: burlywood !important;
-                font-size: 60px;
-                font-family: Comic Sans MS;
-            }
-            .nav-item a{
-                font-size: 18px;
-                color: white;
-                font-family: Comic Sans MS;
-            }
-            
-            .nav-link:hover{
-               
-                color:  burlywood !important;
-                text-decoration: underline;
-            }
-            
-            /* Navbar css end */
-              /* footer css start */
-             .contact-info{
-                list-style: none;
-                color: black;
-                font-family: serif;
-            }
-            
-            .opening-hours{
-                list-style: none;
-                color: black;
-                 font-family: serif;
-            }
-            .quick-links{
-                list-style: none;
-                font-family: serif;
-                text-align: center;
-            }
-            .quick-links a{
-               text-decoration: none;
-               color: black;
-              
-            }
-            .quick-links a:hover{
-                text-decoration: underline;
-                color: #66462f;
-            }
-            .imp-links{
-                 font-family: serif;
-            }
-            
-            footer{
-                background-color: burlywood;
-                
-            }
-           
-           
-           
-            .social-media{
-                display: flex;
-                gap: 15px;
-                color: black;
-                
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-            }
-            .bi-instagram{
-                color: orangered;
-            }
-            .bi-facebook{
-                color: blue;
-            }
-            .bi-youtube{
-                color: red;
-            }
-            .bi-whatsapp{
-                color: green;
-            }
-            .connection{
-                padding: 10px;
-                text-align: center;
-                color: #66462f;
-            }
-            .connect{
-                text-align: center;
-            }
-            .info{
-                padding: 10px;
-                text-align: center;
-                color: #66462f;
-            }
-            .imp-links{
-                padding: 10px;
-                text-align: center;
-                color: #66462f;
-            }
-              /* Footer Css End */
+    <style>
+        /* Navbar css start */
+        
+        .navbar {
+            background-color: #66462f;
+        }
+        
+        .navbar-brand {
+            color: burlywood !important;
+            font-size: 60px;
+            font-family: Comic Sans MS;
+        }
+        
+        .nav-item a {
+            font-size: 18px;
+            color: white;
+            font-family: Comic Sans MS;
+        }
+        
+        .nav-link:hover {
+            color: burlywood !important;
+            text-decoration: underline;
+        }
+        /* Navbar Css End */
+        /* heading css strat */
+        
+        .heading-section {
+            background-color: #be865e;
+        }
+        
+        .h1style {
+            color: rgb(46, 27, 2) !important;
+            font-size: 60px;
+            font-family: Comic Sans MS;
+        }
+        
+        .p-style {
+            color: rgb(73, 48, 17);
+            font-size: 25px;
+            font-family: Comic Sans MS;
+        }
+        /* heading section end */
+        /* menu section strat */
+        
+        .menu-section {
+            background-color: #be865e;
+        }
+        
+        .position-sticky {
+            position: sticky;
+        }
+        
+        .button {
+            height: 40px;
+            width: 160px;
+            border-radius: 50px;
+            color: rgb(53, 32, 1);
+            font-size: 20px;
+            font-family: Comic Sans MS;
+            border-color: black;
+        }
+        /* coffee section */
+        
+        .coffe-section {
+            background-color: antiquewhite;
+        }
+        
+        .coffe-heading {
+            color: rgb(46, 27, 2) !important;
+            font-size: 40px;
+            font-family: Comic Sans MS;
+        }
+        
+        .coffee-para {
+            color: rgb(88, 60, 26);
+            font-size: 20px;
+            font-family: Comic Sans MS;
+        }
+        /* card style */
+        
+        .star-rateing {
+            color: gold;
+        }
+        /* tag styleing */
+        
+        .popular {
+            height: 30px;
+            width: 95px;
+            background-color: rgb(228, 119, 119);
+            border-radius: 100px;
+            align-items: center;
+            padding-inline: 20px;
+            padding-right: 3px;
+            font-size: 15px;
+            font-family: Comic Sans MS;
+            color: rgb(145, 38, 38);
+            margin-left: 170px;
+        }
+        
+        .new {
+            height: 30px;
+            width: 83px;
+            background-color: rgb(165, 165, 240);
+            border-radius: 100px;
+            align-items: center;
+            padding-inline: 20px;
+            padding-right: 8px;
+            font-size: 15px;
+            font-family: Comic Sans MS;
+            color: blue;
+            margin-left: 180px;
+        }
+        
+        .new-first {
+            height: 30px;
+            width: 83px;
+            background-color: rgb(165, 165, 240);
+            border-radius: 100px;
+            align-items: center;
+            padding-inline: 20px;
+            padding-right: 8px;
+            font-size: 15px;
+            font-family: Comic Sans MS;
+            color: blue;
+            margin-left: 10px;
+        }
+        
+        .vegetraian {
+            height: 30px;
+            width: 110px;
+            background-color: rgb(193, 239, 193);
+            border-radius: 100px;
+            align-items: center;
+            padding-inline: 20px;
+            padding-right: 3px;
+            font-size: 15px;
+            font-family: Comic Sans MS;
+            color: green;
+            margin-left: 10px;
+        }
+        
+        .Spicy {
+            height: 30px;
+            width: 90px;
+            background-color: rgb(232, 183, 183);
+            border-radius: 100px;
+            align-items: center;
+            padding-inline: 20px;
+            padding-right: 3px;
+            font-size: 15px;
+            font-family: Comic Sans MS;
+            color: red;
+            margin-left: 10px;
+        }
+        
+        .Gluten-Free {
+            height: 30px;
+            width: 130px;
+            background-color: rgb(250, 216, 128);
+            border-radius: 100px;
+            align-items: center;
+            padding-inline: 20px;
+            padding-right: 3px;
+            font-size: 15px;
+            font-family: Comic Sans MS;
+            color: rgb(230, 166, 4);
+            margin-left: 130px;
+        }
+        
+        .flex-content {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .price {
+            height: 30px;
+            width: 85px;
+            font-size: 18px;
+            color: rgb(124, 35, 35);
+            background-color: rgb(236, 184, 184);
+            border-radius: 100px;
+            margin-left: 190px;
+            align-items: center;
+            padding-right: 6px;
+            padding-inline: 20px;
+            padding-top: 5px;
+            padding-bottom: 3px;
+        }
+        
+        .Breakfast-price {
+            height: 30px;
+            width: 85px;
+            font-size: 18px;
+            color: rgb(124, 35, 35);
+            background-color: rgb(236, 184, 184);
+            border-radius: 100px;
+            margin-left: 130px;
+            align-items: center;
+            padding-right: 6px;
+            padding-inline: 20px;
+            padding-top: 5px;
+            padding-bottom: 3px;
+        }
+        
+        .lunch-price {
+            height: 30px;
+            width: 90px;
+            font-size: 18px;
+            color: rgb(124, 35, 35);
+            background-color: rgb(236, 184, 184);
+            border-radius: 100px;
+            margin-left: 90px;
+            align-items: center;
+            padding-right: 6px;
+            padding-inline: 20px;
+            padding-top: 5px;
+            padding-bottom: 3px;
+        }
+        
+        .lunch-price-H {
+            height: 30px;
+            width: 90px;
+            font-size: 18px;
+            color: rgb(124, 35, 35);
+            background-color: rgb(236, 184, 184);
+            border-radius: 100px;
+            margin-left: 170px;
+            align-items: center;
+            padding-right: 6px;
+            padding-inline: 20px;
+            padding-top: 5px;
+            padding-bottom: 3px;
+        }
+        
+        .dessert-price {
+            height: 30px;
+            width: 90px;
+            font-size: 18px;
+            color: rgb(124, 35, 35);
+            background-color: rgb(236, 184, 184);
+            border-radius: 100px;
+            margin-left: 90px;
+            align-items: center;
+            padding-right: 6px;
+            padding-inline: 20px;
+            padding-top: 5px;
+            padding-bottom: 3px;
+        }
+        
+        .card-title {
+            color: rgb(124, 35, 35);
+        }
+        
+        .card {
+            transition: 1s;
+        }
+        
+        .card:hover {
+            transform: scale(1.1);
+        }
+        /* Footer Css Start */
+        
+        .contact-info {
+            list-style: none;
+            color: black;
+            font-family: serif;
+        }
+        
+        .opening-hours {
+            list-style: none;
+            color: black;
+            font-family: serif;
+        }
+        
+        .quick-links {
+            list-style: none;
+            font-family: serif;
+            text-align: center;
+        }
+        
+        .quick-links a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        .quick-links a:hover {
+            text-decoration: underline;
+            color: #66462f;
+        }
+        
+        .imp-links {
+            font-family: serif;
+        }
+        
+        footer {
+            background-color: burlywood;
+        }
     </style>
-    </head>
-    <body>
-        <header>
-            <nav
-                class="navbar navbar-expand-lg  mt-0 border-body">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"
-                        style="font-size: 40px;">Corner-cup</a>
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse"
-                        id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page"
-                                    href="index.html">Home</a>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  mt-0 border-body sticky-top ">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#" style="font-size: 40px;">Corner-cup</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About
+                                Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="order-online.html">Order Online</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="heading-section">
+            <br>
+            <div class="comntainer">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center h1style">
+                            Menu
+                        </h1>
+                        <!-- <p class="text-center p-style">.Coffe .Kitchen .Community</p> -->
+                        <p class="text-center p-style"><i class="bi bi-clock"></i> open: 7:00 AM - 10:00 PM Daily</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- menu section -->
+        <section class="side-spacing menu-section">
+            <br>
+            <div class="container">
+                <div class="row position-sticky">
+                    <div class="col-md-12 text-center">
+                        <button type="button" class="btn btn-outline-secondary button me-3 mx-4">
+                            <i class="fa-solid fa-mug-saucer"></i>Coffee</button>
+                        <button type="button" class="btn btn-outline-secondary button me-3 mx-4">
+                            <i class="fa-solid fa-mug-hot"></i>Tea</button>
+                        <button type="button" class="btn btn-outline-secondary button me-3 mx-4"><i
+                                class="fa-solid fa-egg"></i>BreakFast</button>
+                        <button type="button" class="btn btn-outline-secondary  button mx-4"><i
+                                class="fa-solid fa-burger"></i>Lunch</button>
+                        <button type="button" class="btn btn-outline-secondary button me-3 mx-4"><i
+                                class="fa-solid fa-ice-cream"></i>Desserts</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </section>
+
+        <!-- coffee staion strat -->
+        <section class="coffe-section">
+            <br>
+            <h1 class="text-center coffe-heading">Signature Coffees</h1>
+
+            <p class="text-center coffee-para">
+                Carefully sourced beans, expertly roasted and brewed to perfection
+            </p>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/coffee.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">Cappuccino</h5>
+                                    <h5 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 90</h5>
+                                </div>
+                                <p class="card-text">Espresso combined with vanilla-flavored syrup, milk and caramel drizzle. The perfect balance of sweet and robust.</p>
+                                <div class="flex-content">
+                                    <p class="star-rateing">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-alt"></i>
+
+                                    </p>
+                                    <div class="popular">
+                                        <p class="card-text">popular
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/americano.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">Americano</h5>
+                                    <h5 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 70</h5>
+
+                                </div>
+                                <p class="card-text">A bold and smooth espresso diluted with hot water, offering a rich, deep flavor and a perfectly balanced cup for coffee lovers.</p>
+                                <div class="flex-content">
+                                    <p class="star-rateing">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-alt"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </p>
+                                    <!-- <div class="popular">
+                                        <p class="card-text">regular
+                                        </p>
+                                    </div> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/macchiato.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">Macchiato</h5>
+                                    <h5 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 120</h5>
+
+                                </div>
+
+                                <p class="card-text">A strong shot of espresso “stained” with a dash of frothy milk, creating a bold yet silky coffee experience.</p>
+                                <div class="flex-content">
+                                    <p class="star-rateing">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-alt"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </p>
+                                    <div class="new">
+                                        <p class="card-text">New
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+        </section>
+        <!-- cofee section end -->
+
+
+        <!-- tea section start -->
+
+        <section>
+            <br>
+            <h1 class="text-center coffe-heading">Artisan Teas</h1>
+
+            <p class="text-center coffee-para">
+                Premium loose-leaf teas from around the world, steeped to perfection
+            </p>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/milk-tea_1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">Milk Tea</h5>
+                                    <h5 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 20</h5>
+                                </div>
+                                <p class="card-text">A comforting blend of strong brewed tea and creamy milk, perfect balance of richness and sweetness.</p>
+                                <div class="flex-content">
+                                    <p class="star-rateing">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-alt"></i>
+
+                                    </p>
+                                    <div class="popular">
+                                        <p class="card-text">popular
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/Black-Tea-2-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">Black Tea</h5>
+                                    <h5 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 10</h5>
+
+                                </div>
+                                <p class="card-text">Bold and robust, this classic brew delivers a deep flavor and energizing start to your day.</p>
+                                <div class="flex-content">
+                                    <p class="star-rateing">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-alt"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </p>
+                                    <div class="new">
+                                        <p class="card-text">New
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/Green-Tea1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">Green Tea</h5>
+                                    <h5 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 20</h5>
+
+                                </div>
+
+                                <p class="card-text">Light, refreshing, and packed with antioxidants — a soothing choice for a healthy boost.</p>
+                                <div class="flex-content">
+                                    <p class="star-rateing">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-alt"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </p>
+                                    <!-- <div class="popular">
+                                        <p class="card-text">regular
+                                        </p>
+                                    </div> -->
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+        </section>
+        <!-- tea section end -->
+
+        <!-- BreakFast section start -->
+        <section class="coffe-section">
+            <br>
+            <h1 class="text-center coffe-heading">Morning Delights</h1>
+
+            <p class="text-center coffee-para">
+                Start your day right with our freshly prepared breakfast options
+            </p>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/Avocado Toast Deluxe.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">Avocado Toast</h5>
+                                    <h5 class="Breakfast-price"><i class="fa-solid fa-indian-rupee-sign"></i> 190</h5>
+                                </div>
+                                <p class="card-text">Creamy smashed avocado on artisanal toast, topped with cherry tomatoes, microgreens, and a drizzle of olive oil for a fresh, wholesome bite.</p>
+                                <div class="flex-content">
+                                    <!-- <p class="star-rateing">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-alt"></i>
+
+                                    </p> -->
+                                    <div class="vegetraian">
+                                        <p class="card-text">Vegetarian
+                                        </p>
+                                    </div>
+                                    <div class="vegetraian">
+                                        <p class="card-text">Vegan
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/Breakfast Burrito.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">Breakfast Burrito</h5>
+                                    <h5 class="Breakfast-price"><i class="fa-solid fa-indian-rupee-sign"></i> 170</h5>
+
+                                </div>
+                                <p class="card-text">Flour tortilla filled with scrambled eggs, crispy bacon, black beans, cheddar cheese, avocado, and salsa verde.</p>
+                                <div class="flex-content">
+
+                                    <div class="Spicy">
+                                        <p class="card-text">Spicy
+                                        </p>
+                                    </div>
+                                    <!-- <p class="star-rateing">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-alt"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </p> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/chilli-labneh-eggs.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">Chilli labneh eggs</h5>
+                                    <h5 class="Breakfast-price"><i class="fa-solid fa-indian-rupee-sign"></i> 120</h5>
+
+                                </div>
+
+                                <p class="card-text">Creamy labneh topped with perfectly cooked eggs, a drizzle of spiced chili oil, and fresh herbs for a rich, zesty delight.</p>
+                                <div class="flex-content">
+                                    <p class="star-rateing">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-alt"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </p>
+                                    <div class="new">
+                                        <p class="card-text">New
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+        </section>
+        <!-- BreakFast section End -->
+
+        <!-- lunch section start -->
+        <section>
+            <br>
+            <h1 class="text-center coffe-heading">Lunch Specialties</h1>
+
+            <p class="text-center coffee-para">
+                Fresh, satisfying meals made with locally sourced ingredients
+            </p>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/Grilled Chicken Club.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">Grilled Chicken Club</h5>
+                                    <h5 class="lunch-price"><i class="fa-solid fa-indian-rupee-sign"></i> 220</h5>
+                                </div>
+                                <p class="card-text">Grilled chicken breast, applewood smoked bacon, avocado, lettuce, tomato, and garlic aioli on toasted brioche.</p>
+                                <div class="flex-content">
+                                    <p class="star-rateing">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-alt"></i>
+
+                                    </p>
+                                    <div class="popular">
+                                        <p class="card-text">popular
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/harvest-bowl-FT-RECIPE1124-be5c307de9734268af0a6ff0d7a632bb (1).jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">Harvest Bowl</h5>
+                                    <h5 class="lunch-price-H"><i class="fa-solid fa-indian-rupee-sign"></i> 310</h5>
+
+                                </div>
+                                <p class="card-text">Organic quinoa topped with roasted sweet potatoes, Brussels sprouts, chickpeas, kale, and lemon-tahini dressing..</p>
+                                <div class="flex-content">
+                                    <p class="star-rateing">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-alt"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </p>
+                                    <div class="new">
+                                        <p class="card-text">New
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/soup.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">Nonna’s Pastina Soup</h5>
+                                    <h5 class="lunch-price"><i class="fa-solid fa-indian-rupee-sign"></i> 250</h5>
+
+                                </div>
+
+                                <p class="card-text">A heartwarming bowl of delicate pastina pasta in a light, flavorful broth. A comforting classic that feels just like a warm hug from Nonna.</p>
+                                <div class="flex-content">
+                                    <div class="vegetraian">
+                                        <p class="card-text">vegetraian
+                                        </p>
+                                    </div>
+                                    <div class="Gluten-Free">
+                                        <p class="card-text">Gluten-Free
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+        </section>
+        <!-- lunch section end -->
+
+        <!-- desserts section start -->
+        <section class="coffe-section">
+            <br>
+            <h1 class="text-center coffe-heading">Sweet Indulgences</h1>
+
+            <p class="text-center coffee-para">
+                Handcrafted desserts and pastries baked fresh daily
+            </p>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/molten-lava-cake.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">Molten Lava Cake</h5>
+                                    <h5 class="Breakfast-price"><i class="fa-solid fa-indian-rupee-sign"></i> 150</h5>
+                                </div>
+                                <p class="card-text">A decadent chocolate delight with a warm, gooey center. Perfect for satisfying your sweet cravings with every bite.</p>
+                                <div class="flex-content">
+                                    <p class="star-rateing">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-alt"></i>
+
+                                    </p>
+                                    <div class="popular">
+                                        <p class="card-text">popular
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/new york cheesecake.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">New York Cheesecake</h5>
+                                    <h5 class="dessert-price"><i class="fa-solid fa-indian-rupee-sign"></i> 270</h5>
+
+                                </div>
+                                <p class="card-text">Creamy classic cheesecake with graham cracker crust, topped with seasonal berry compote and whipped cream.</p>
+                                <div class="flex-content">
+
+                                    <div class="vegetraian">
+                                        <p class="card-text">vegetraian
+                                        </p>
+                                    </div>
+                                    <!-- <p class="star-rateing">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-alt"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </p> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/blueberry.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <div class="flex-content">
+                                    <h5 class="card-title">Blueberry Cheesecake</h5>
+                                    <h5 class="dessert-price"><i class="fa-solid fa-indian-rupee-sign"></i> 420</h5>
+
+                                </div>
+
+                                <p class="card-text">Creamy, velvety cheesecake topped with a luscious blueberry compote, offering the perfect balance of sweetness and tang.</p>
+                                <div class="flex-content">
+                                    <!-- <p class="star-rateing">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-alt"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </p> -->
+
+                                    <div class="new-first">
+                                        <p class="card-text">New
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+
+        </section>
+        <!-- desserts section end -->
+
+    </main>
+    <footer>
+        <section class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="contact-info">
+                            <h4 class="info">Our Address<i class="bi bi-geo-alt-fill"></i></h4>
+                            <li class="address">Address : Corner-Cup Café <br> 456, FC Road, Shivajinagar <br> Pune, Maharashtra - 411005 <br> Phone: +91 98765 43210 <br> Email: info@cornercup.com <br>
+
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="menu.html">Menu</a>
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <ul class="opening-hours">
+                            <h4 class="connection">Connect With Us</h4>
+                            <li class="connect">
+                                <p><i class="bi bi-envelope"></i> corner-cup@gmail.com
+                                </p>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="gallery.html">Gallery</a>
+                            <li class="connect">
+                                <p><i class="bi bi-envelope"></i> support@gmail.com
+                                </p>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about-us.html">About
-                                    Us</a>
+                            <li class="connect">
+                                <h4>9 AM – 11 PM</h4>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="contact-us.html">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"
-                                    href="order-online.html">Order Online</a>
+                            <li class="connect">
+                                <p>Mon-Sun</p>
                             </li>
                         </ul>
                     </div>
-                </div>
-            </nav>
-        </header>
+                    <div class="col-md-3">
+                        <h4 class="imp-links">Important Links</h4>
+                        <ul class="quick-links">
+                            <li><i class="bi bi-chevron-right"></i><a href="index.html">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="menu.html">Menu</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="gallery.html">Gallery</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="about-us.html">About U</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="contact-us.html">Contact
+                                        Us</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="order-online.html">Order
+                                        Online</a></li>
 
-        <footer>
-            <section class="mt-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <ul class="contact-info">
-                                <h4 class="info">Our Address<i
-                                        class="bi bi-geo-alt-fill"></i></h4>
-                                <li class="address">Address :
-                                    Corner-Cup Café <br>
-                                    456, FC Road, Shivajinagar <br>
-                                    Pune, Maharashtra - 411005 <br>
-                                    Phone: +91 98765 43210 <br>
-                                    Email: info@cornercup.com <br>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="imp-links">Social Handle's</h4>
+                        <ul class="quick-links">
+                            <li><i class="bi bi-instagram"> </i><a href="https://www.instagram.com/">Instagram</a></li>
+                            <li><i class="bi bi-facebook"> </i><a href="https://www.facebook.com/">Facebook</a></li>
+                            <li><i class="bi bi-twitter-x"> </i><a href="https://www.twitter.com/">Twitter</a></li>
+                            <li><i class="bi bi-youtube"> </i><a href="https://www.youtube.com/">Youtube</a></li>
+                            <li><i class="bi bi-whatsapp"> </i><a href="whatsapp">Whatsapp</a></li>
+                            <hr>
+                            <p>Follow For Update's</p>
 
-                                </li>
-                            </ul>
-
-                        </div>
-
-                        <div class="col-md-3">
-
-                            <ul class="opening-hours">
-                                <h4 class="connection">Connect With Us</h4>
-                                <li class="connect"><p><i
-                                            class="bi bi-envelope"></i>
-                                        corner-cup@gmail.com</p></li>
-                                <li class="connect"><p><i
-                                            class="bi bi-envelope"></i>
-                                        support@gmail.com</p></li>
-                                <li class="connect"><h4>9 AM – 11 PM</h4></li>
-                                <li class="connect"><p>Mon-Sun</p></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <h4 class="imp-links">Important Links</h4>
-                            <ul class="quick-links">
-                                <li><i class="bi bi-chevron-right"></i><a
-                                        href="index.html">Home</a></li>
-                                <li><i class="bi bi-chevron-right"></i><a
-                                        href="menu.html">Menu</a></li>
-                                <li><i class="bi bi-chevron-right"></i><a
-                                        href="gallery.html">Gallery</a></li>
-                                <li><i class="bi bi-chevron-right"></i><a
-                                        href="about-us.html">About U</a></li>
-                                <li><i class="bi bi-chevron-right"></i><a
-                                        href="contact-us.html">Contact Us</a></li>
-                                <li><i class="bi bi-chevron-right"></i><a
-                                        href="order-online.html">Order Online</a></li>
-
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <h4 class="imp-links">Social Handle's</h4>
-                            <ul class="quick-links">
-                                <li><i class="bi bi-instagram"> </i><a
-                                        href="https://www.instagram.com/">Instagram</a></li>
-                                <li><i class="bi bi-facebook"> </i><a
-                                        href="https://www.facebook.com/">Facebook</a></li>
-                                <li><i class="bi bi-twitter-x"> </i><a
-                                        href="https://www.twitter.com/">Twitter</a></li>
-                                <li><i class="bi bi-youtube"> </i><a
-                                        href="https://www.youtube.com/">Youtube</a></li>
-                                <li><i class="bi bi-whatsapp"> </i><a
-                                        href="whatsapp">Whatsapp</a></li>
-                                <hr>
-                                <p>Follow For Update's</p>
-
-                            </ul>
-                        </div>
+                        </ul>
                     </div>
                 </div>
-            </section>
-        </footer>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-            crossorigin="anonymous"></script>
-    </body>
+            </div>
+        </section>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
 </html>
