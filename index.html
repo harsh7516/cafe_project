@@ -4,143 +4,716 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HOME</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+
+        <style>
+            body{
+                overflow-x: hidden ;
+            }
+            
+            /* Navbar css start */
+            
+            .navbar{
+                background-color:#66462f;  
+                
+            }
+            .navbar-brand{
+                color: burlywood !important;
+                font-size: 60px;
+                font-family: Comic Sans MS;
+            }
+            .nav-item a{
+                font-size: 18px;
+                color: white;
+                font-family: Comic Sans MS;
+            }
+            
+            .nav-link:hover{
+               
+                color:  burlywood !important;
+                text-decoration: underline;
+            }
+           
+               
+            /* Navbar Css End */
+           
+            /* Main Css Start */
+
+            .aboutus{
+                font-family:Serif;
+                padding: 10px;
+                color: #66462f;
+            }
+
+            .we-are{
+                font-family: serif;
+                padding: 20px;
+               
+            }
+             .cafe-info2{
+                font-size: 20px;
+                font-family:Serif;
+                padding: 5px;
+            }
+            .cafe-info{
+                font-family: Serif;
+                padding: 5px;
+                 color: #66462f;
+            }
+             .button{
+                background-color: #66462f;
+                padding: 15px;
+                border-radius: 15px 15px 15px 15px;
+                color: white;
+                font-family:  serif;
+                
+            }
+            .button:hover{
+                background-color: burlywood;
+                color: black;
+             }
+             .button2{
+                background-color: #66462f;
+                padding: 15px;
+                border-radius: 15px 15px 15px 15px;
+                color: white;
+                font-family:  serif;
+                margin-left: 50px;
+            }
+            .button2:hover{
+                background-color: burlywood;
+                color: black;
+             }
+             
+            .countries{
+                font-family:  serif;
+               
+            }
+            .count{
+                color: #66462f;
+                
+            }
+            .countries2{
+                font-family:  serif;
+                
+            }
+            .count2{
+                color: #66462f;
+                
+            }
+             .info-img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: transform 1s ease;
+            }
+            .info-img:hover{
+                
+                transform: translate(120px);
+            }
+
+
+            /* Main div1 Css End */
+
+
+            /* Main div2 Css Start */
+
+            .cc-info{
+                font-size: 20px;
+                margin-left: 60px;
+                font-family: serif;  
+            }
+            
+            
+            .cc-img{
+                margin-left: 100px;
+                 transition: transform 1s ease;
+                
+            }
+            .cc-img:hover{
+                
+                transform: translateX(120px);
+            }
+            .varities{
+                display: flex;
+                justify-content: space-between;
+                margin-left: 60px;
+                
+                
+            }
+            .varities li{
+                list-style: none;
+                font-family: serif;
+            }
+            .varity{
+                text-align: center;
+                font-family: serif;
+                color: #66462f;
+            }
+            .special-cold-coffee{
+                text-align: center;
+                padding: 20px;
+                font-family: serif;
+                color: #66462f;
+            }
+            .address{
+                text-align: center;
+            }
+
+            /* Main div2 Css End */
+
+            /* Footer Css Start */
+            
+
+            .contact-info{
+                list-style: none;
+                color: black;
+                font-family: serif;
+            }
+            
+            .opening-hours{
+                list-style: none;
+                color: black;
+                 font-family: serif;
+            }
+            .quick-links{
+                list-style: none;
+                font-family: serif;
+                text-align: center;
+            }
+            .quick-links a{
+               text-decoration: none;
+               color: black;
+              
+            }
+            .quick-links a:hover{
+                text-decoration: underline;
+                color: #66462f;
+            }
+            .imp-links{
+                 font-family: serif;
+            }
+            
+            footer{
+                background-color: burlywood;
+                
+            }
+           
+           
+           
+            .social-media{
+                display: flex;
+                gap: 15px;
+                color: black;
+                
+
+            }
+            .bi-instagram{
+                color: orangered;
+            }
+            .bi-facebook{
+                color: blue;
+            }
+            .bi-youtube{
+                color: red;
+            }
+            .bi-whatsapp{
+                color: green;
+            }
+            .connection{
+                padding: 10px;
+                text-align: center;
+                color: #66462f;
+            }
+            .connect{
+                text-align: center;
+            }
+            .info{
+                padding: 10px;
+                text-align: center;
+                color: #66462f;
+            }
+            .imp-links{
+                padding: 10px;
+                text-align: center;
+                color: #66462f;
+            }
+            .bg-img{
+                height: auto;
+            }
+            /* Footer Css End */
+
+           
+
+  /* Extra Small Devices up to 576px */
+@media (max-width: 576px){
+
+    .navbar-brand {
+        font-size: 28px; /* Navbar brand smaller */
+    }
+    .nav-item a {
+        font-size: 14px;
+    }
+
+    .bg-img video {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-info {
+        display: none; /* Hide side image on small screens */
+    }
+
+    .aboutus, .cafe-info, .cafe-info2 {
+        text-align: center;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+
+    .button, .button2 {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .we-are {
+        text-align: center;
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .count, .count2, .countries, .countries2 {
+        text-align: center;
+    }
+
+    .cc-info {
+        font-size: 14px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .cc-img {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+    }
+
+    .varities {
+        flex-direction: column;
+        text-align: center;
+        margin: 10px 0;
+    }
+    .varities ul {
+        padding: 0;
+    }
+
+    footer {
+        text-align: center;
+    }
+    .quick-links {
+        text-align: center;
+        padding: 0;
+    }
+    .social-media {
+        justify-content: center;
+    }
+}
+
+
+/* Small Devices (Tablets) - 577px to 768px */
+@media (min-width: 577px) and (max-width: 768px){
+
+    .navbar-brand {
+        font-size: 32px;
+    }
+    .nav-item a {
+        font-size: 15px;
+    }
+
+    .aboutus, .cafe-info {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .button, .button2 {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .cc-info {
+        font-size: 16px;
+        margin: 15px;
+    }
+
+    .varities {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .varities ul {
+        margin: 10px;
+    }
+
+    .cc-img {
+        width: 70%;
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+
+/* Medium Devices (Laptops) - 769px to 992px */
+@media (min-width: 769px) and (max-width: 992px){
+
+    .navbar-brand {
+        font-size: 36px;
+    }
+
+    .aboutus {
+        font-size: 24px;
+    }
+
+    .cafe-info {
+        font-size: 18px;
+    }
+
+    .cc-info {
+        font-size: 18px;
+    }
+
+    .cc-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+/* Large Devices (Desktops) - 993px and above */
+@media (min-width: 993px){
+    .navbar-brand {
+        font-size: 40px;
+    }
+    .cc-img {
+        width: 400px;
+    }
+}
+
+              
+             
+           
+        </style>    
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
             crossorigin="anonymous">
 
-        <style>
-                body{
-                    background-image: url(images/bg2.jpg);
-                    background-size: 100%;
-                    flex-direction: column;
-                    background-position: center;
-                    background-size: cover;
-                    }
-                .collapse{
-                    background-color: transparent;
-                   
-                }
-
-                .nav-item {
-                    margin: 10px;
-                    
-                    
-                }
-                .nav-link{ 
-                    color: black;
-                    font-size: 20px;
-                    margin-left: 20px;
-                    font-family: Comic Sans MS;
-                    
-                }
-                .nav-link:hover{
-                    color: white;
-                    color: brown;
-                    text-decoration: underline;
-                }
-                .navbar-brand{
-                    font-size: 30px;
-                    margin-left: 10px;
-                    color: brown;
-                    font-family: Comic Sans MS;
-                }
-                .logo-name{
-                    text-align: center;
-                    margin-top: 190px;
-                    margin-right: 500px;
-                    color: brown;
-                    font-size: 100px;
-                    font-family: Comic Sans MS;
-                }
-                .cafe   {
-                    text-align: center;
-                    margin-top: 1px;
-                    margin-right: 200px;
-                    color: brown;
-                    font-size: 80px;
-                    font-family: Comic Sans MS;
-                }
-                .intro{
-                     text-align: center;
-                    margin-top: 10px;
-                    margin-right: 500px;
-                    font-size: 30px;
-                    font-family: Comic Sans MS;
-                }
-                .intro2{
-                    text-align: center;
-                    margin-top: 1px;
-                    margin-right: 500px;
-                    font-size: 30px;
-                    font-family: Comic Sans MS;
-                }
-               
-            </style>
-
     </head>
-    <body>
+    <body style="background-color: whitesmoke;">
+
         <header>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-
-                    <a class="navbar-brand" href="#">Corner Cup</a>
-
+            <nav
+                class="navbar navbar-expand-lg  mt-0 border-body sticky-top ">
+                <div class="container-fluid ">
+                    <a class="navbar-brand" href="#"
+                        style="font-size: 40px;">Corner-cup</a>
                     <button class="navbar-toggler" type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse"
                         id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link " aria-current="page"
-                                    href="#">Home</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Menu</a>
+                                <a class="nav-link" aria-current="page"
+                                    href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Gallery</a>
+                                <a class="nav-link" href="menu.html">Menu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
+                                <a class="nav-link"
+                                    href="gallery.html">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="about-us.html">About
+                                    Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Order Online</a>
+                                <a class="nav-link"
+                                    href="contact-us.html">Contact Us</a>
                             </li>
-
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="order-online.html">Order Online</a>
+                            </li>
                         </ul>
-
                     </div>
                 </div>
             </nav>
-        </header>
-        <main>
-            <div>
-
-                <h1 class="logo-name">Corner-Cup</h1>
-                <h2 class="cafe"></h2>
-                <p class="intro">"Where Every Sip Feels Like Home"</p>
-                <p class="intro2">Coffee • Conversations • Comfort</p>
+            <div class="bg-img">
+                <video width="100%" height="auto" autoplay muted loop>
+                    <source src="images/bg video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
 
+        </header>
+
+        <main>
+            <!-- Mobile Screen Media Query Code max-width-467 -->
+
+            <!-- <h3 class="our-special">Our Special</h3>
+             <div class="cc-cup">
+                <img src="images/cup-20.webp" alt="">
+                <h4 class="cold-coffee">cold coffee</h4>
+            </div> -->
+
+
+
+
+
+            <!-- Mobile Screen Media Query Code max-width-467 End -->
+            <div class="mt-5">
+                <div class="continer">
+                    <div class="row">
+                        <div class="col-md-6 info-img">
+                            <img class="img-info" src="images/cafe.webp" alt height="500px">
+                        </div>
+                        <div class="first-div col-md-6">
+                            <h1 class="aboutus"><i class="bi bi-cup-hot"></i>
+                                About Us </h1>
+                            <h3 class="cafe-info">Where Every Sip Feels Like Home</h3>
+                            <p class="cafe-info2">Welcome to Corner-Cup, Pune’s
+                                favorite spot for fresh coffee and cozy 
+                                vibes. Whether you need a quick takeaway or a
+                                peaceful place to relax,  we’ve got the
+                                perfect brew waiting for you Since 1995, we’ve
+                                been serving handcrafted coffee, delicious
+                                bites, and warm smiles. Step in for the aroma,
+                                stay for the comfort.</p>
+                            <a href="order-online.html"><button class="button"
+                                    type="button"
+                                    class="btn">Order Online <i
+                                        class="bi bi-arrow-90deg-right"></i></button></a>
+                            <button class="button2" type="button"
+                                class="btn">Connect With Us <i
+                                    class="bi bi-arrow-90deg-right"></i></button>
+                            <div class="row">
+                                <h1 class="we-are">Corner-Cup Is In!</h1>
+                                <div class="col-md-3">
+
+                                    <h1 class="count">45+</h1>
+                                    <p class="countries">Countries</p>
+
+                                </div>
+
+                                <div class="col-md-3">
+                                    <h1 class="count2">30K</h1>
+                                    <p class="countries2">Min Delivery</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
            
+
+            <div class=" div2 mt-5">
+                <div class="continer">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="special-cold-coffee">Our Special
+                                Cold-Coffee</h1>
+                            <p class="cc-info">Our cold coffee is the star of
+                                the café! Made with freshly brewed coffee,
+                                creamy milk, and a touch of sweetness, it’s
+                                perfectly chilled to refresh your senses. Every
+                                sip delivers a smooth, rich flavor that keeps
+                                you coming back for more. Whether you need a
+                                pick-me-up or a delicious treat, our signature
+                                cold coffee is the perfect choice.</p>
+                            <h3 class="varity">Varities</h3>
+                            <div class="varities">
+
+                                <ul>
+                                    <li><i
+                                            class="bi bi-chevron-right"></i>Classic
+                                        Iced </li>
+                                    <li><i class="bi bi-chevron-right"></i>Iced
+                                        Latte</li>
+                                    <li><i class="bi bi-chevron-right"></i>Iced
+                                        Mocha</li>
+                                    <li><i class="bi bi-chevron-right"></i>Cold
+                                        Brew </li>
+                                </ul>
+                                <ul>
+                                    <li><i
+                                            class="bi bi-chevron-right"></i>Caramel
+                                        Iced </li>
+                                    <li><i
+                                            class="bi bi-chevron-right"></i>Vanilla</li>
+                                    <li><i
+                                            class="bi bi-chevron-right"></i>Affogato</li>
+                                    <li><i
+                                            class="bi bi-chevron-right"></i>Chocolate
+                                        Chip</li>
+                                </ul>
+                                <ul>
+                                    <li><i
+                                            class="bi bi-chevron-right"></i>Hazelnut
+                                        Iced</li>
+                                    <li><i
+                                            class="bi bi-chevron-right"></i>Caramel
+                                        Macchiato</li>
+                                    <li><i
+                                            class="bi bi-chevron-right"></i>Spiced
+                                        Iced</li>
+                                    <li><i
+                                            class="bi bi-chevron-right"></i>Protein
+                                        Cold</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="cc-img" src="images/cup-20.webp" alt>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </main>
 
+        <footer>
+            <section class="mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <ul class="contact-info">
+                                <h4 class="info">Our Address<i
+                                        class="bi bi-geo-alt-fill"></i></h4>
+                                <li class="address">Address :
+                                    Corner-Cup Café <br>
+                                    456, FC Road, Shivajinagar <br>
+                                    Pune, Maharashtra - 411005 <br>
+                                    Phone: +91 98765 43210 <br>
+                                    Email: info@cornercup.com <br>
+
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <ul class="opening-hours">
+                                <h4 class="connection">Connect With Us</h4>
+                                <li class="connect"><p><i
+                                            class="bi bi-envelope"></i>
+                                        corner-cup@gmail.com</p></li>
+                                <li class="connect"><p><i
+                                            class="bi bi-envelope"></i>
+                                        support@gmail.com</p></li>
+                                <li class="connect"><h4>9 AM – 11 PM</h4></li>
+                                <li class="connect"><p>Mon-Sun</p></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="imp-links">Important Links</h4>
+                            <ul class="quick-links">
+                                <li><i class="bi bi-chevron-right"></i><a
+                                        href="index.html">Home</a></li>
+                                <li><i class="bi bi-chevron-right"></i><a
+                                        href="menu.html">Menu</a></li>
+                                <li><i class="bi bi-chevron-right"></i><a
+                                        href="gallery.html">Gallery</a></li>
+                                <li><i class="bi bi-chevron-right"></i><a
+                                        href="about-us.html">About U</a></li>
+                                <li><i class="bi bi-chevron-right"></i><a
+                                        href="contact-us.html">Contact
+                                        Us</a></li>
+                                <li><i class="bi bi-chevron-right"></i><a
+                                        href="order-online.html">Order
+                                        Online</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="imp-links">Social Handle's</h4>
+                            <ul class="quick-links">
+                                <li><i class="bi bi-instagram"> </i><a
+                                        href="https://www.instagram.com/">Instagram</a></li>
+                                <li><i class="bi bi-facebook"> </i><a
+                                        href="https://www.facebook.com/">Facebook</a></li>
+                                <li><i class="bi bi-twitter-x"> </i><a
+                                        href="https://www.twitter.com/">Twitter</a></li>
+                                <li><i class="bi bi-youtube"> </i><a
+                                        href="https://www.youtube.com/">Youtube</a></li>
+                                <li><i class="bi bi-whatsapp"> </i><a
+                                        href="whatsapp">Whatsapp</a></li>
+                                <hr>
+                                <p>Follow For Update's</p>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
             crossorigin="anonymous"></script>
 
     </body>
-</html>
+</html>.
+  <!-- body{
+                    overflow-x: hidden;
+                }
+                .navbar{
+                    width: 500px;
+                }
+                .bg-img{
+                    height: 200px;
+                    width: 500px;
+                }
+                .img-info{
+                    display: none;
+                }
+                .aboutus, cafe-info, cafe-info2 ,button , button2{
+                    display: none;
+                }
+                .cc-cup{
+                    margin-top: 0px;
+                    margin-left: 50px;
+                   
+                }
+                .our-special{
+                    text-align: center;
+                    margin-left: 130px;
+                    margin-top: 100px;
+                    margin-bottom: 0%;
+                }
+            }
+
+            @media (min-width: 468px) and (max-width: 1440px){
+                .cc-cup{
+                    display: none;
+                }
+            } -->
