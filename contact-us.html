@@ -162,7 +162,7 @@
         
         .contact-form-area h2 {
             color: #66462f;
-            font-family: Serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
             margin-bottom: 24px;
         }
         
@@ -236,7 +236,7 @@
         .cafe-info-card span {
             font-size: 17px;
             color: #66462f;
-            font-family: serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
         /* Essential Info */
         
@@ -265,11 +265,29 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
         
         .essential-info i {
             color: #d2b48c;
             font-size: 18px;
+        }
+        
+        .map-btn {
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+            border-radius: 8px;
+        }
+        
+        .map-btn:hover,
+        .map-btn:focus {
+            background: #66462f;
+            color: #fff;
+            transform: scale(1.07);
+            border-color: #66462f;
+        }
+        
+        .map-btn i {
+            margin-right: 6px;
         }
         /* Map Area */
         
@@ -287,7 +305,7 @@
         
         .contact-map-area h2 {
             color: #66462f;
-            font-family: Serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
             margin-bottom: 24px;
         }
         
@@ -415,23 +433,73 @@
                 </div>
             </div>
         </div>
+
+
         <div class="row">
-            <!-- Essential Info Section -->
-            <div class="col-md-8 offset-md-2">
-                <div class="essential-info animate__animated animate__fadeIn">
-                    <h5>Essential Info</h5>
+            <!-- Essential Info Section: 3 Branches  -->
+            <div class="col-md-4 mb-4">
+                <div class="essential-info animate__animated animate__fadeInUp animate__delay-1s">
+                    <h5>Main Branch</h5>
                     <ul>
-                        <li><i class="bi bi-geo-alt-fill"></i> 456, FC Road, Shivajinagar, Pune, Maharashtra - 411005</li>
-                        <li><i class="bi bi-telephone-fill"></i> +91 98765 43210
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i> 456, FC Road, Shivajinagar, Pune, Maharashtra - 411005
                         </li>
-                        <li><i class="bi bi-envelope-fill"></i> info@cornercup.com
-                        </li>
-                        <li><i class="bi bi-clock-fill"></i> 9 AM – 11 PM (Mon-Sun)
-                        </li>
+                        <li><i class="bi bi-telephone-fill"></i> +91 98765 43210</li>
+                        <li><i class="bi bi-envelope-fill"></i> info@cornercup.com</li>
+                        <li><i class="bi bi-clock-fill"></i> 9 AM – 11 PM (Mon-Sun)</li>
                     </ul>
+                    <div class="d-grid mt-3">
+                        <a href="https://www.google.com/maps?q=456+FC+Road+Shivajinagar+Pune+Maharashtra+411005" target="_blank" rel="noopener">
+                            <button class="btn btn-outline-primary map-btn" type="button">
+                                <i class="bi bi-map"></i> View on Map
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="essential-info animate__animated animate__fadeInUp animate__delay-2s">
+                    <h5>Baner Branch</h5>
+                    <ul>
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i> 22, Baner Road, Baner, Pune, Maharashtra - 411045
+                        </li>
+                        <li><i class="bi bi-telephone-fill"></i> +91 91234 56789</li>
+                        <li><i class="bi bi-envelope-fill"></i> baner@cornercup.com</li>
+                        <li><i class="bi bi-clock-fill"></i> 8 AM – 10 PM (Mon-Sun)</li>
+                    </ul>
+                    <div class="d-grid mt-3">
+                        <a href="https://www.google.com/maps?q=22+Baner+Road+Baner+Pune+Maharashtra+411045" target="_blank" rel="noopener">
+                            <button class="btn btn-outline-primary map-btn" type="button">
+                                <i class="bi bi-map"></i> View on Map
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="essential-info animate__animated animate__fadeInUp animate__delay-3s">
+                    <h5>Kothrud Branch</h5>
+                    <ul>
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i> 78, Paud Road, Kothrud, Pune, Maharashtra - 411038
+                        </li>
+                        <li><i class="bi bi-telephone-fill"></i> +91 99887 65432</li>
+                        <li><i class="bi bi-envelope-fill"></i> kothrud@cornercup.com</li>
+                        <li><i class="bi bi-clock-fill"></i> 10 AM – 9 PM (Mon-Sun)</li>
+                    </ul>
+                    <div class="d-grid mt-3">
+                        <a href="https://www.google.com/maps?q=78+Paud+Road+Kothrud+Pune+Maharashtra+411038" target="_blank" rel="noopener">
+                            <button class="btn btn-outline-primary map-btn" type="button">
+                                <i class="bi bi-map"></i> View on Map
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+
+
     </div>
 
     <!-- Contact Form End -->
