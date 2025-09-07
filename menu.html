@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -275,11 +275,13 @@
         }
         
         .card {
-            transition: 1s;
+            transition: transform 0.3s;
+            overflow: hidden;
         }
         
         .card:hover {
-            transform: scale(1.1);
+            /* transform: scale(1.1); */
+            transform: translateY(-8px);
             border: 3px solid rgb(29, 1, 1);
         }
         /* Footer Css Start */
@@ -365,7 +367,64 @@
         }
         
         .bg-img {
-            height: auto;
+            height: 250px;
+            background-image: url("/menuimages/bg.jpg");
+        }
+        /* Medium devices (tablets, 768px to 1199px) */
+        
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .col-md-4 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            .h1style {
+                font-size: 2.5rem;
+            }
+            .coffe-heading {
+                font-size: 2rem;
+            }
+            .button {
+                margin: 0 8px 10px 8px;
+            }
+            .price,
+            .Breakfast-price,
+            .lunch-price,
+            .dessert-price {
+                height: 30px;
+                width: 90px;
+            }
+        }
+        /* Small devices (phones, less than 768px) */
+        
+        @media (max-width: 767px) {
+            .col-md-4 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .h1style {
+                font-size: 2rem;
+            }
+            .coffe-heading {
+                font-size: 1.5rem;
+            }
+            .button {
+                display: none;
+                margin: 10px 0;
+            }
+            .card-body {
+                padding: 15px;
+            }
+            .price,
+            .Breakfast-price,
+            .lunch-price,
+            .dessert-price {
+                font-size: 1.2rem;
+                height: 30px;
+                width: 90px;
+            }
+            .card-text {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -405,23 +464,38 @@
         </nav>
     </header>
     <main>
-        <section class="heading-section">
+        <section class="heading-section bg-img">
             <br>
             <div class="comntainer">
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="text-center h1style">
                             Menu
-                        </h1>
+                        </h1><br>
                         <!-- <p class="text-center p-style">.Coffe .Kitchen .Community</p> -->
                         <p class="text-center p-style"><i class="bi bi-clock"></i> open: 7:00 AM - 10:00 PM Daily</p>
+                    </div><br>
+                    <div class="row position-sticky">
+                        <div class="col-md-12 text-center">
+                            <button type="button" class="btn btn-outline-secondary button me-3 mx-4">
+                            <i class="fa-solid fa-mug-saucer"></i>Coffee</button>
+                            <button type="button" class="btn btn-outline-secondary button me-3 mx-4">
+                            <i class="fa-solid fa-mug-hot"></i>Tea</button>
+                            <button type="button" class="btn btn-outline-secondary button me-3 mx-4"><i
+                                class="fa-solid fa-egg"></i>BreakFast</button>
+                            <button type="button" class="btn btn-outline-secondary  button mx-4"><i
+                                class="fa-solid fa-burger"></i>Lunch</button>
+                            <button type="button" class="btn btn-outline-secondary button me-3 mx-4"><i
+                                class="fa-solid fa-ice-cream"></i>Desserts</button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <br>
         </section>
 
         <!-- menu section -->
-        <section class="side-spacing menu-section">
+        <!-- <section class="side-spacing menu-section">
             <br>
             <div class="container">
                 <div class="row position-sticky">
@@ -440,10 +514,10 @@
                 </div>
             </div>
             <br>
-        </section>
+        </section> -->
 
         <!-- coffee staion strat -->
-        <section class="coffe-section">
+        <section class="coffe-section coffee">
             <br>
             <h1 class="text-center coffe-heading">Signature Coffees</h1>
 
