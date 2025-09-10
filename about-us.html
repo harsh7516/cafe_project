@@ -17,24 +17,23 @@
     <style>
         /* Navbar css start */
         
-        .navbar {
-            background-color: #66462f;
+        .navbar{
+            background-color:whitesmoke !important;
         }
-        
         .navbar-brand {
-            color: burlywood !important;
+            color: brown !important;
             font-size: 60px;
-            font-family: Comic Sans MS;
+              font-family: 'Lobster Two';
         }
         
         .nav-item a {
             font-size: 18px;
-            color: white;
-            font-family: Comic Sans MS;
+            color: black;
+            font-family: 'Bebas Neue';
         }
         
         .nav-link:hover {
-            color: burlywood !important;
+            color: brown !important;
             text-decoration: underline;
         }
         /* Navbar css end */
@@ -139,7 +138,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: bisque;
+      background: white;
     }
 
     .hero-content {
@@ -148,23 +147,35 @@
     }
     .ab-cup{
       color: #66462f;
+      font-family:'lobster Two';
     }
 
     .story-content{
       font-family: serif;
       font-size: 20px;
+      /* color: #66462f; */
     }
     .story-img{
       height: 350px;
       width: 700px;
     }
+
+    .story-img:hover{
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
     .bg-m-v{
-      background-color:burlywood;
+      background-color:whitesmoke;
     }
     .Our-m-v{
-      background: bisque;
+      background: white;
     }
    
+    .m-v:hover{
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
 
     /* Cards */
     .card:hover {
@@ -181,45 +192,41 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg  mt-0 border-body">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            style="font-size: 40px;">Corner-cup</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page"
-                  href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about-us.html">About
-                  Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact-us.html">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="order-online.html">Order Online</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <nav class="navbar navbar-expand-lg mt-0 border-body sticky-top ">
+            <div class="container-fluid ">
+                    
+               <img class="logo" src="images/logo.png" alt="" width="250px">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                    
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0px">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About
+                                    Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="our-products.html">Our Products</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
     </header>
 
+    
     <main>
       <!-- Hero Section -->
       <section class="hero-bg">
@@ -235,7 +242,7 @@
       </section>
 
       <!-- Our Story -->
-      <section class="py-5 bg-light">
+      <section class="py-5" style="background-color: whitesmoke;">
         <div class="container">
           <h2 class="text-center mb-4 display-5 fw-bold ab-cup">Our Story</h2>
           <div class="row align-items-center">
@@ -270,7 +277,7 @@
           <h2 class="display-5 fw-bold mb-4 ab-cup">Our Mission & Vision</h2>
           <div class="row g-4">
             <div class="col-md-6 d-flex">
-              <div class="p-4 bg-m-v rounded w-100">
+              <div class="p-4 bg-m-v rounded w-100 m-v">
                 <h3 class="ab-cup">Our Mission</h3>
                 <p class="text-dark">
                   To deliver unparalleled coffee that energizes, strengthens
@@ -279,8 +286,8 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-6 d-flex">
-              <div class="p-4 bg-m-v rounded w-100">
+            <div class="col-md-6 d-flex ">
+              <div class="p-4 bg-m-v rounded w-100 m-v">
                 <h3 class="ab-cup">Our Vision</h3>
                 <p class="text-dark">
                   To be the leading coffee destination known for inspiring
@@ -294,9 +301,9 @@
       </section>
 
       <!-- Team -->
-      <section class="py-5 bg-light">
+      <section class="py-5 " style="background-color: whitesmoke;">
         <div class="container">
-          <h2 class="text-center mb-5 display-5 fw-bold">Meet the Team</h2>
+          <h2 class="text-center mb-5 display-5 fw-bold ab-cup">Meet the Team</h2>
           <div class="row g-4">
             <div class="col-md-4">
               <div class="card text-center p-4">
@@ -342,19 +349,19 @@
             Customers Say</h2>
           <div class="row g-4">
             <div class="col-md-4 ">
-              <blockquote class="bg-m-v p-4 rounded">
+              <blockquote class="bg-m-v p-4 rounded text-dark">
                 "The best espresso around—pure comfort in a cup!"<br>
                 <cite class="text-danger">- Jamie L., Regular</cite>
               </blockquote>
             </div>
             <div class="col-md-4 ">
-              <blockquote class="bg-m-v p-4 rounded">
+              <blockquote class="bg-m-v p-4 rounded text-dark">
                 "Ideal ambiance for productivity or downtime. Love their ethical practices."<br>
                 <cite class="text-danger">- Taylor R., Enthusiast</cite>
               </blockquote>
             </div>
             <div class="col-md-4">
-              <blockquote class="bg-m-v p-4 rounded">
+              <blockquote class="bg-m-v p-4 rounded text-dark">
                 "As a coffee lover, their craftsmanship is unmatched—every visit delights!"<br>
                 <cite class="text-danger">- Alex M., Blogger</cite>
               </blockquote>
@@ -403,7 +410,7 @@
 </div> -->
     <!-- servises modal end -->
     <footer>
-      <section class="mt-5">
+      <section class="mt-5" style="background-color: whitesmoke;">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
