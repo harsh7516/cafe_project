@@ -43,6 +43,9 @@
             color: brown !important;
             text-decoration: underline;
         }
+          .logo{
+            padding: 5px;
+        }
         /* Navbar Css End */
         /* Main Css Start */
         .bg-text{
@@ -165,7 +168,7 @@
             padding: 15px;
             display: flex;
             justify-content: space-between;
-            margin-left: 60px;
+            margin-left: 10px;
         }
         
         .varities li {
@@ -432,6 +435,16 @@
                 width: 400px;
             }
         }
+        /* Hide bg-img for all mobile views */
+       
+
+        /* Mobile screens (up to 576px) par sirf text hide hogi */
+@media (max-width: 576px) {
+    .bg-text {
+        display: none;
+    }
+}
+
         .logo{
             padding: 5px;
         }
@@ -460,6 +473,9 @@
                             <a class="nav-link" href="menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="our-products.html">Our Products</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
                         <li class="nav-item">
@@ -469,9 +485,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact-us.html">Contact Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="our-products.html">Our Products</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
