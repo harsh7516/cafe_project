@@ -657,6 +657,43 @@
         <!-- main section end -->
     </main>
 
+    <script>
+        const dialog = document.querySelector("#dialog");
+        const images = document.querySelectorAll(".imageGallery button");
+        const closeDialogBtn = document.querySelector("#closeDialogBtn");
+
+        function openDialog(index) {
+            if (!document.startViewTransition) {
+                dialog.showModal();
+                document.querySelectorAll("#carousel img")[index].scrollIntoView();
+            } else handleTransition(index);
+        }
+
+        // Wait until the transition finished and the dialog opens before scrolling into view.
+        async function handleTransition(index) {
+            const transition = document.startViewTransition(() =>
+                dialog.showModal()
+            );
+            try {
+                await transition.finished;
+            } finally {
+                document.querySelectorAll("#carousel img")[index].scrollIntoView();
+            }
+        }
+
+        const closeDialog = () => {
+            if (!document.startViewTransition) dialog.close();
+            else document.startViewTransition(() => dialog.close());
+        };
+
+        images.forEach((img, index) => {
+            console.log(index);
+            img.addEventListener("click", () => openDialog(index));
+        });
+
+        closeDialogBtn.addEventListener("click", () => closeDialog());
+    </script>
+
     <!-- footer start -->
 
     <footer>
@@ -666,10 +703,11 @@
                     <div class="col-md-3">
                         <ul class="contact-info">
                             <h4 class="info">Our Address<i class="bi bi-geo-alt-fill"></i></h4>
-                            <li class="address">Address : Corner-Cup Café
-                                <br> 456, FC Road, Shivajinagar <br> Pune, Maharashtra - 411005 <br> Phone: +91 98765 43210 <br> Email: info@cornercup.com <br>
+                            <li class="address">Address : Corner-Cup Café <br> 456, FC Road, Shivajinagar <br> Pune, Maharashtra - 411005 <br> Phone: +91 98765 43210 <br> Email: info@cornercup.com <br>
+
                             </li>
                         </ul>
+
                     </div>
 
                     <div class="col-md-3">
@@ -677,7 +715,8 @@
                         <ul class="opening-hours">
                             <h4 class="connection">Connect With Us</h4>
                             <li class="connect">
-                                <p><i class="bi bi-envelope"></i> corner-cup@gmail.com</p>
+                                <p><i class="bi bi-envelope"></i> corner-cup@gmail.com
+                                </p>
                             </li>
                             <li class="connect">
                                 <p><i class="bi bi-envelope"></i> support@gmail.com
@@ -725,42 +764,6 @@
 
     <!-- footer end -->
 
-    <script>
-        const dialog = document.querySelector("#dialog");
-        const images = document.querySelectorAll(".imageGallery button");
-        const closeDialogBtn = document.querySelector("#closeDialogBtn");
-
-        function openDialog(index) {
-            if (!document.startViewTransition) {
-                dialog.showModal();
-                document.querySelectorAll("#carousel img")[index].scrollIntoView();
-            } else handleTransition(index);
-        }
-
-        // Wait until the transition finished and the dialog opens before scrolling into view.
-        async function handleTransition(index) {
-            const transition = document.startViewTransition(() =>
-                dialog.showModal()
-            );
-            try {
-                await transition.finished;
-            } finally {
-                document.querySelectorAll("#carousel img")[index].scrollIntoView();
-            }
-        }
-
-        const closeDialog = () => {
-            if (!document.startViewTransition) dialog.close();
-            else document.startViewTransition(() => dialog.close());
-        };
-
-        images.forEach((img, index) => {
-            console.log(index);
-            img.addEventListener("click", () => openDialog(index));
-        });
-
-        closeDialogBtn.addEventListener("click", () => closeDialog());
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 
