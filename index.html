@@ -8,436 +8,428 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-      <!-- <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet"> -->
 </head>
 <style>
-            .aboutus{
-                font-family: 'Lato', sans-serif;
-                padding: 10px;
-                color: #66462f;
-            }
-
+    .aboutus {
+        font-family: 'Lato', sans-serif;
+        padding: 10px;
+        color: #66462f;
+    }
     
-        body {
-            overflow-x: hidden;
-        }
-        /* Navbar css start */
-        
-      
-        .navbar{
-            background-color:whitesmoke !important;
-        }
+    body {
+        overflow-x: hidden;
+    }
+    /* Navbar css start */
+    
+    .navbar {
+        background-color: whitesmoke !important;
+    }
+    
+    .navbar-brand {
+        color: brown !important;
+        font-size: 60px;
+        font-family: 'Lobster Two';
+    }
+    
+    .nav-item a {
+        font-size: 18px;
+        color: black;
+        font-family: 'Bebas Neue';
+    }
+    
+    .nav-link:hover {
+        color: brown !important;
+        text-decoration: underline;
+    }
+    /* Navbar Css End */
+    /* Main Css Start */
+    
+    .bg-text {
+        position: absolute;
+        top: 30%;
+        padding: 25px;
+        margin-left: 15%;
+        font-family: 'Lobster Two';
+    }
+    
+    .bg-text button {
+        background-color: #66462f;
+        padding: 0px 40px;
+        height: 60px;
+        border-radius: 15px 15px 15px 15px;
+        color: white;
+        font-family: serif;
+        font-size: 20px;
+    }
+    
+    .bg-text button:hover {
+        background-color: burlywood;
+        color: black;
+    }
+    
+    .aboutus {
+        padding: 10px;
+        color: #66462f;
+    }
+    
+    .we-are {
+        font-family: serif;
+        padding: 20px;
+    }
+    
+    .cafe-info2 {
+        font-size: 20px;
+        font-family: 'Bebas Neue';
+        padding: 5px;
+    }
+    
+    .cafe-info {
+        font-family: 'Lato', sans-serif;
+        padding: 5px;
+        color: #66462f;
+    }
+    
+    .button {
+        background-color: #66462f;
+        padding: 15px;
+        border-radius: 15px 15px 15px 15px;
+        color: white;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .button:hover {
+        background-color: burlywood;
+        color: black;
+    }
+    
+    .button2 {
+        background-color: #66462f;
+        padding: 15px;
+        border-radius: 15px 15px 15px 15px;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        margin-left: 50px;
+    }
+    
+    .button2:hover {
+        background-color: burlywood;
+        color: black;
+    }
+    
+    .countries {
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .count {
+        color: rgb(86, 72, 55);
+    }
+    
+    .countries2 {
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .count2 {
+        color: rgb(86, 72, 55);
+    }
+    
+    .info-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 1s ease;
+    }
+    
+    .info-img:hover {
+        transform: translate(120px);
+    }
+    /* Main div1 Css End */
+    /* Main div2 Css Start */
+    
+    .cc-info {
+        font-size: 20px;
+        margin-left: 60px;
+        font-family: 'Bebas Neue';
+    }
+    
+    .cc-img {
+        margin-left: 100px;
+        transition: transform 1s ease;
+    }
+    
+    .cc-img:hover {
+        transform: translateX(120px);
+    }
+    
+    .varities {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 60px;
+    }
+    
+    .varities li {
+        list-style: none;
+        font-family: serif;
+    }
+    
+    .varity {
+        text-align: center;
+        font-family: 'Lobster Two';
+        color: #66462f;
+    }
+    
+    .special-cold-coffee {
+        text-align: center;
+        padding: 20px;
+        font-family: 'Lato', sans-serif;
+        color: #66462f;
+    }
+    
+    .address {
+        text-align: center;
+    }
+    /* Main div2 Css End */
+    /* Main div3 Css start */
+    
+    .c-name {
+        text-align: center;
+    }
+    
+    .ex-button {
+        margin-left: 30%;
+        background-color: #66462f !important;
+    }
+    
+    .ex-button:hover {
+        color: black !important;
+        background-color: burlywood !important;
+    }
+    /* Main div3 Css End */
+    /* Footer Css Start */
+    
+    .contact-info {
+        list-style: none;
+        color: black;
+        font-family: serif;
+    }
+    
+    .opening-hours {
+        list-style: none;
+        color: black;
+        font-family: serif;
+    }
+    
+    .quick-links {
+        list-style: none;
+        font-family: serif;
+    }
+    
+    .quick-links a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .quick-links a:hover {
+        text-decoration: underline;
+        color: #66462f;
+    }
+    
+    .imp-links {
+        font-family: serif;
+    }
+    
+    footer {
+        margin-bottom: 0% !important;
+        background-color: whitesmoke;
+    }
+    
+    .social-media {
+        display: flex;
+        gap: 15px;
+        color: black;
+    }
+    
+    .bi-instagram {
+        color: orangered;
+    }
+    
+    .bi-facebook {
+        color: blue;
+    }
+    
+    .bi-youtube {
+        color: red;
+    }
+    
+    .bi-whatsapp {
+        color: green;
+    }
+    
+    .connection {
+        padding: 10px;
+        color: #66462f;
+    }
+    
+    .info {
+        padding: 10px;
+        text-align: center;
+        color: #66462f;
+    }
+    
+    .imp-links {
+        padding: 10px;
+        /* text-align: center; */
+        color: #66462f;
+    }
+    
+    .bg-img {
+        height: auto;
+    }
+    /* Footer Css End */
+    /* Extra Small Devices up to 576px */
+    
+    @media (max-width: 576px) {
         .navbar-brand {
-            color: brown !important;
-            font-size: 60px;
-              font-family: 'Lobster Two';
+            font-size: 28px;
+            /* Navbar brand smaller */
         }
-        
         .nav-item a {
-            font-size: 18px;
-            color: black;
-            font-family: 'Bebas Neue';
+            font-size: 14px;
         }
-        
-        .nav-link:hover {
-            color: brown !important;
-            text-decoration: underline;
-        }
-        /* Navbar Css End */
-        /* Main Css Start */
-        .bg-text{
-            position: absolute;
-            top: 30%;
-            padding: 25px;
-            margin-left: 15%;
-            font-family: 'Lobster Two';
-        }
-        .bg-text button{
-           background-color: #66462f;
-            padding: 0px 40px ;
-            height: 60px;
-            border-radius: 15px 15px 15px 15px;
-            color: white;
-            font-family: serif;
-            font-size: 20px;
-        }
-        
-        .bg-text button:hover {
-            background-color: burlywood;
-            color: black;
-        }
-        .aboutus {
-           
-            padding: 10px;
-            color: #66462f;
-        }
-        
-        .we-are {
-            font-family: serif;
-            padding: 20px;
-        }
-        
-        .cafe-info2 {
-            font-size: 20px;
-            font-family: 'Bebas Neue';
-            padding: 5px;
-        }
-        
-        .cafe-info {
-            font-family: 'Lato', sans-serif;
-            padding: 5px;
-            color: #66462f;
-        }
-        
-        .button {
-            background-color: #66462f;
-            padding: 15px;
-            border-radius: 15px 15px 15px 15px;
-            color: white;
-           font-family: 'Lato', sans-serif;
-        }
-        
-        .button:hover {
-            background-color: burlywood;
-            color: black;
-        }
-        
-        .button2 {
-            background-color: #66462f;
-            padding: 15px;
-            border-radius: 15px 15px 15px 15px;
-            color: white;
-            font-family: 'Lato', sans-serif;
-            margin-left: 50px;
-        }
-        
-        .button2:hover {
-            background-color: burlywood;
-            color: black;
-        }
-        
-        .countries {
-            font-family: 'Lato', sans-serif;
-        }
-        
-        .count {
-            color: rgb(86, 72, 55);
-        }
-        
-        .countries2 {
-            font-family: 'Lato', sans-serif;
-        }
-        
-        .count2 {
-            color: rgb(86, 72, 55);
-        }
-        
-        .info-img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: transform 1s ease;
-        }
-        
-        .info-img:hover {
-            transform: translate(120px);
-
-        }
-           /* Main div1 Css End */
-        /* Main div2 Css Start */
-        
-        .cc-info {
-            font-size: 20px;
-            margin-left: 60px;
-            font-family: 'Bebas Neue';
-        }
-        
-        .cc-img {
-            margin-left: 100px;
-            transition: transform 1s ease;
-        }
-        
-        .cc-img:hover {
-            transform: translateX(120px);
-        }
-        
-        .varities {
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            margin-left: 60px;
-        }
-        
-        .varities li {
-            list-style: none;
-            font-family: serif;
-        }
-        
-        .varity {
-            text-align: center;
-               font-family: 'Lobster Two';
-            color: #66462f;
-        }
-        
-        .special-cold-coffee {
-            text-align: center;
-            padding: 20px;
-             font-family: 'Lato', sans-serif;
-            color: #66462f;
-        }
-        
-        .address {
-            text-align: center;
-        }
-        /* Main div2 Css End */
-        /* Main div3 Css start */
-        
-        .c-name {
-            text-align: center;
-        }
-        
-        .ex-button {
-            margin-left: 30%;
-            background-color: #66462f !important;
-        }
-
-        
-        .ex-button:hover {
-            color: black !important;
-            background-color: burlywood !important;
-        }
-        /* Main div3 Css End */
-
-        
-            /* Footer Css Start */
-        
-        .contact-info {
-            list-style: none;
-            color: black;
-            font-family: serif;
-        }
-        
-        .opening-hours {
-            list-style: none;
-            color: black;
-            font-family: serif;
-        }
-        
-        .quick-links {
-            list-style: none;
-            font-family: serif;
-            
-        }
-        
-        .quick-links a {
-            text-decoration: none;
-            color: black;
-        }
-        
-        .quick-links a:hover {
-            text-decoration: underline;
-            color: #66462f;
-        }
-        
-        .imp-links {
-            font-family: serif;
-        }
-        
-        footer {
-            margin-bottom: 0% !important;
-            background-color: whitesmoke;
-        }
-        
-        .social-media {
-            display: flex;
-            gap: 15px;
-            color: black;
-        }
-        
-        .bi-instagram {
-            color: orangered;
-        }
-        
-        .bi-facebook {
-            color: blue;
-        }
-        
-        .bi-youtube {
-            color: red;
-        }
-        
-        .bi-whatsapp {
-            color: green;
-        }
-        
-        .connection {
-            padding: 10px;
-            color: #66462f;
-        }
-        
-     
-        
-        .info {
-            padding: 10px;
-            text-align: center;
-            color: #66462f;
-        }
-        
-        .imp-links {
-            padding: 10px;
-            /* text-align: center; */
-            color: #66462f;
-        }
-        
-        .bg-img {
+        .bg-img video {
+            width: 100%;
             height: auto;
         }
-        /* Footer Css End */
-        
-        /* Extra Small Devices up to 576px */
-        
-        @media (max-width: 576px) {
-            .navbar-brand {
-                font-size: 28px;
-                /* Navbar brand smaller */
-            }
-            .nav-item a {
-                font-size: 14px;
-            }
-            .bg-img video {
-                width: 100%;
-                height: auto;
-            }
-            .img-info {
-                display: none;
-                /* Hide side image on small screens */
-            }
-            .aboutus,
-            .cafe-info,
-            .cafe-info2 {
-                text-align: center;
-                margin: 10px auto;
-                font-size: 16px;
-            }
-            .button,
-            .button2 {
-                display: block;
-                width: 80%;
-                margin: 10px auto;
-                font-size: 14px;
-                padding: 10px;
-            }
-            .we-are {
-                text-align: center;
-                font-size: 20px;
-                margin: 15px 0;
-            }
-            .count,
-            .count2,
-            .countries,
-            .countries2 {
-                text-align: center;
-            }
-            .cc-info {
-                font-size: 14px;
-                margin: 10px;
-                text-align: center;
-            }
-            .cc-img {
-                display: block;
-                margin: 0 auto;
-                width: 80%;
-                height: auto;
-            }
-            .varities {
-                flex-direction: column;
-                text-align: center;
-                margin: 10px 0;
-            }
-            .varities ul {
-                padding: 0;
-            }
-            footer {
-                text-align: center;
-            }
-           
-            /* .social-media {
+        .img-info {
+            display: none;
+            /* Hide side image on small screens */
+        }
+        .aboutus,
+        .cafe-info,
+        .cafe-info2 {
+            text-align: center;
+            margin: 10px auto;
+            font-size: 16px;
+        }
+        .button,
+        .button2 {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            font-size: 14px;
+            padding: 10px;
+        }
+        .we-are {
+            text-align: center;
+            font-size: 20px;
+            margin: 15px 0;
+        }
+        .count,
+        .count2,
+        .countries,
+        .countries2 {
+            text-align: center;
+        }
+        .cc-info {
+            font-size: 14px;
+            margin: 10px;
+            text-align: center;
+        }
+        .cc-img {
+            display: block;
+            margin: 0 auto;
+            width: 80%;
+            height: auto;
+        }
+        .varities {
+            flex-direction: column;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .varities ul {
+            padding: 0;
+        }
+        footer {
+            text-align: center;
+        }
+        /* .social-media {
                 justify-content: center;
             } */
+    }
+    /* Small Devices (Tablets) - 577px to 768px */
+    
+    @media (min-width: 577px) and (max-width: 768px) {
+        .navbar-brand {
+            font-size: 32px;
         }
-        /* Small Devices (Tablets) - 577px to 768px */
-        
-        @media (min-width: 577px) and (max-width: 768px) {
-            .navbar-brand {
-                font-size: 32px;
-            }
-            .nav-item a {
-                font-size: 15px;
-            }
-            .aboutus,
-            .cafe-info {
-                text-align: center;
-                font-size: 18px;
-            }
-            .button,
-            .button2 {
-                font-size: 15px;
-                padding: 12px;
-            }
-            .cc-info {
-                font-size: 16px;
-                margin: 15px;
-            }
-            .varities {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 10px;
-            }
-            .varities ul {
-                margin: 10px;
-            }
-            .cc-img {
-                width: 70%;
-                margin: 10px auto;
-                display: block;
-            }
+        .nav-item a {
+            font-size: 15px;
         }
-        /* Medium Devices (Laptops) - 769px to 992px */
-        
-        @media (min-width: 769px) and (max-width: 992px) {
-            .navbar-brand {
-                font-size: 36px;
-            }
-            .aboutus {
-                font-size: 24px;
-            }
-            .cafe-info {
-                font-size: 18px;
-            }
-            .cc-info {
-                font-size: 18px;
-            }
-            .cc-img {
-                width: 80%;
-                margin: 0 auto;
-            }
+        .aboutus,
+        .cafe-info {
+            text-align: center;
+            font-size: 18px;
         }
-        /* Large Devices (Desktops) - 993px and above */
-        
-        @media (min-width: 993px) {
-            .navbar-brand {
-                font-size: 40px;
-            }
-            .cc-img {
-                width: 400px;
-            }
+        .button,
+        .button2 {
+            font-size: 15px;
+            padding: 12px;
         }
-        .logo{
-            padding: 5px;
+        .cc-info {
+            font-size: 16px;
+            margin: 15px;
         }
-        
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        .varities {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .varities ul {
+            margin: 10px;
+        }
+        .cc-img {
+            width: 70%;
+            margin: 10px auto;
+            display: block;
+        }
+    }
+    /* Medium Devices (Laptops) - 769px to 992px */
+    
+    @media (min-width: 769px) and (max-width: 992px) {
+        .navbar-brand {
+            font-size: 36px;
+        }
+        .aboutus {
+            font-size: 24px;
+        }
+        .cafe-info {
+            font-size: 18px;
+        }
+        .cc-info {
+            font-size: 18px;
+        }
+        .cc-img {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    /* Large Devices (Desktops) - 993px and above */
+    
+    @media (min-width: 993px) {
+        .navbar-brand {
+            font-size: 40px;
+        }
+        .cc-img {
+            width: 400px;
+        }
+    }
+    
+    .logo {
+        padding: 5px;
+    }
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
 </head>
 
@@ -446,12 +438,12 @@
     <header>
         <nav class="navbar navbar-expand-lg mt-0 border-body sticky-top ">
             <div class="container-fluid ">
-                    
-               <img class="logo" src="images/logo.png" alt="" width="250px">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-                    
+
+                <img class="logo" src="images/logo.png" alt="" width="250px">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0px">
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
@@ -459,18 +451,18 @@
                             <a class="nav-link" href="menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="our-products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About
-                                    Us</a>
+                            <a class="nav-link" href="about-us.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact-us.html">Contact Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="our-products.html">Our Products</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -487,7 +479,7 @@
     </header>
 
     <main>
-      
+
         <div class="mt-5">
             <div class="continer">
                 <div class="row">
@@ -576,7 +568,7 @@
         <div class="mt-5">
             <div class="container">
                 <div class="row">
-                    <h1 style="text-align: center; padding: 5px;  font-family: 'Lobster Two'; color: #66462f;" ><i class="bi bi-cup-hot"></i> Secret Brew</h1>
+                    <h1 style="text-align: center; padding: 5px;  font-family: 'Lobster Two'; color: #66462f;"><i class="bi bi-cup-hot"></i> Secret Brew</h1>
                     <div class="col-md-4">
                         <img src="images/erica.png" alt width="100%">
                         <h4 class="c-name">Espresso</h4>

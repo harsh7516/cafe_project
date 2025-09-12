@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About US</title>
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
         /* Navbar css start */
         
-        .navbar{
-            background-color:whitesmoke !important;
+        .navbar {
+            background-color: whitesmoke !important;
         }
+        
         .navbar-brand {
             color: brown !important;
             font-size: 60px;
-              font-family: 'Lobster Two';
+            font-family: 'Lobster Two';
         }
         
         .nav-item a {
@@ -54,7 +50,6 @@
         .quick-links {
             list-style: none;
             font-family: serif;
-            text-align: center;
         }
         
         .quick-links a {
@@ -72,7 +67,8 @@
         }
         
         footer {
-            background-color: burlywood;
+            margin-bottom: 0% !important;
+            background-color: whitesmoke;
         }
         
         .social-media {
@@ -99,12 +95,7 @@
         
         .connection {
             padding: 10px;
-            text-align: center;
             color: #66462f;
-        }
-        
-        .connect {
-            text-align: center;
         }
         
         .info {
@@ -115,96 +106,108 @@
         
         .imp-links {
             padding: 10px;
-            text-align: center;
+            /* text-align: center; */
             color: #66462f;
         }
+        
+        .bg-img {
+            height: auto;
+        }
+        /* Footer Css End */
         /* Footer Css End */
         /* main css start */
-       /* Hero Section */
-    .hero-bg {
-      /* background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9a845a24-10c5-487c-b72d-8d3793894fad.png'); */
-      background-size: cover;
-      background-position: center;
-      height: 70vh;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-    }
-
-    .hero-bg::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: white;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-    }
-    .ab-cup{
-      color: #66462f;
-      font-family:'lobster Two';
-    }
-
-    .story-content{
-      font-family: serif;
-      font-size: 20px;
-      /* color: #66462f; */
-    }
-    .story-img{
-      height: 350px;
-      width: 700px;
-    }
-
-    .story-img:hover{
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    }
-    .bg-m-v{
-      background-color:whitesmoke;
-    }
-    .Our-m-v{
-      background: white;
-    }
-   
-    .m-v:hover{
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    }
-
-
-    /* Cards */
-    .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    }
-
-    .card {
-      transition: all 0.3s ease;
-    }
+        /* Hero Section */
+        
+        .hero-bg {
+            /* background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9a845a24-10c5-487c-b72d-8d3793894fad.png'); */
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-bg::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: white;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .ab-cup {
+            color: #66462f;
+            font-family: 'lobster Two';
+        }
+        
+        .story-content {
+            font-family: serif;
+            font-size: 20px;
+            /* color: #66462f; */
+        }
+        
+        .story-img {
+            height: 350px;
+            width: 700px;
+        }
+        
+        .story-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .bg-m-v {
+            background-color: whitesmoke;
+        }
+        
+        .Our-m-v {
+            background: white;
+        }
+        
+        .m-v:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        /* Cards */
+        
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .card {
+            transition: all 0.3s ease;
+        }
         /* main css End */
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <nav class="navbar navbar-expand-lg mt-0 border-body sticky-top ">
+        <nav class="navbar navbar-expand-lg mt-0 border-body sticky-top ">
             <div class="container-fluid ">
-                    
-               <img class="logo" src="images/logo.png" alt="" width="250px">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-                    
+
+                <img class="logo" src="images/logo.png" alt="" width="250px">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0px">
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="our-products.html">Products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="gallery.html">Gallery</a>
@@ -216,9 +219,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact-us.html">Contact Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="our-products.html">Our Products</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -226,149 +227,119 @@
 
     </header>
 
-    
+
     <main>
-      <!-- Hero Section -->
-      <section class="hero-bg">
-        <div class="hero-content">
-          <h1 class="display-3 fw-bold ab-cup">About Corner-Cup</h1>
-          <p class="lead text-dark">Discover our passion for perfect brews and
-            community gatherings.</p>
-          <img
-            src="images/cup.png"
-            class="rounded-circle border border-4 border-warning shadow mt-3"
-            alt="Coffee Cup" width="150" height="150">
-        </div>
-      </section>
+        <!-- Hero Section -->
+        <section class="hero-bg">
+            <div class="hero-content">
+                <h1 class="display-3 fw-bold ab-cup">About Corner-Cup</h1>
+                <p class="lead text-dark">Discover our passion for perfect brews and community gatherings.</p>
+                <img src="images/cup.png" class="rounded-circle border border-4 border-warning shadow mt-3" alt="Coffee Cup" width="150" height="150">
+            </div>
+        </section>
 
-      <!-- Our Story -->
-      <section class="py-5" style="background-color: whitesmoke;">
-        <div class="container">
-          <h2 class="text-center mb-4 display-5 fw-bold ab-cup">Our Story</h2>
-          <div class="row align-items-center">
-            <div class="col-md-6 story-content">
-              <p>Founded in 2010 by coffee enthusiasts Alex and Maria Thompson,
-                Brew Haven began as a humble venture in a
-                vibrant city spot. Our journey transformed a simple idea into a
-                sanctuary where exceptional coffee meets
-                lasting friendships.</p>
-              <p>We proudly source beans from responsible farms in Colombia and
-                Ethiopia, championing sustainable
-                practices. Our expert roasters craft an exquisite range, from
-                robust espressos to velvety lattes and
-                invigorating cold brews.</p>
-              <p>Coffee is more than just a beverage here—it's a bridge. Explore
-                our artful lattes or enjoy serene moments
-                with a classic cappuccino, creating cherished experiences
-                together.</p>
+        <!-- Our Story -->
+        <section class="py-5" style="background-color: whitesmoke;">
+            <div class="container">
+                <h2 class="text-center mb-4 display-5 fw-bold ab-cup">Our Story</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6 story-content">
+                        <p>Founded in 2010 by coffee enthusiasts Alex and Maria Thompson, Brew Haven began as a humble venture in a vibrant city spot. Our journey transformed a simple idea into a sanctuary where exceptional coffee meets lasting friendships.</p>
+                        <p>We proudly source beans from responsible farms in Colombia and Ethiopia, championing sustainable practices. Our expert roasters craft an exquisite range, from robust espressos to velvety lattes and invigorating cold brews.</p>
+                        <p>Coffee is more than just a beverage here—it's a bridge. Explore our artful lattes or enjoy serene moments with a classic cappuccino, creating cherished experiences together.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/cafeteria.png" class="img-fluid rounded shadow story-img" alt="Cafe Interior">
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-              <img
-                src="images/cafeteria.png"
-                class="img-fluid rounded shadow story-img" alt="Cafe Interior">
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Mission & Vision -->
-      <section class="py-5 text-white Our-m-v">
-        <div class="container text-center">
-          <h2 class="display-5 fw-bold mb-4 ab-cup">Our Mission & Vision</h2>
-          <div class="row g-4">
-            <div class="col-md-6 d-flex">
-              <div class="p-4 bg-m-v rounded w-100 m-v">
-                <h3 class="ab-cup">Our Mission</h3>
-                <p class="text-dark">
-                  To deliver unparalleled coffee that energizes, strengthens
-                  community ties, and upholds ethical sourcing
-                  for a better world.
-                </p>
-              </div>
+        <!-- Mission & Vision -->
+        <section class="py-5 text-white Our-m-v">
+            <div class="container text-center">
+                <h2 class="display-5 fw-bold mb-4 ab-cup">Our Mission & Vision</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 d-flex">
+                        <div class="p-4 bg-m-v rounded w-100 m-v">
+                            <h3 class="ab-cup">Our Mission</h3>
+                            <p class="text-dark">
+                                To deliver unparalleled coffee that energizes, strengthens community ties, and upholds ethical sourcing for a better world.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex ">
+                        <div class="p-4 bg-m-v rounded w-100 m-v">
+                            <h3 class="ab-cup">Our Vision</h3>
+                            <p class="text-dark">
+                                To be the leading coffee destination known for inspiring moments, sustainable practices, and a welcoming atmosphere that brings people together worldwide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 d-flex ">
-              <div class="p-4 bg-m-v rounded w-100 m-v">
-                <h3 class="ab-cup">Our Vision</h3>
-                <p class="text-dark">
-                  To be the leading coffee destination known for inspiring
-                  moments, sustainable practices, and a welcoming
-                  atmosphere that brings people together worldwide.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Team -->
-      <section class="py-5 " style="background-color: whitesmoke;">
-        <div class="container">
-          <h2 class="text-center mb-5 display-5 fw-bold ab-cup">Meet the Team</h2>
-          <div class="row g-4">
-            <div class="col-md-4">
-              <div class="card text-center p-4">
-                <img
-                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8e3248f4-dcdf-494d-a04a-abdad39c48ad.png"
-                  class="rounded-circle mx-auto mb-3 border border-3 border-dark"
-                  alt="Alex" width="120">
-                <h5 class="fw-bold">Alex Thompson</h5>
-                <p class="text-muted">Founder & Roaster</p>
-                <p><em>"Brewing joy, one cup at a time."</em></p>
-              </div>
+        <!-- Team -->
+        <section class="py-5 " style="background-color: whitesmoke;">
+            <div class="container">
+                <h2 class="text-center mb-5 display-5 fw-bold ab-cup">Meet the Team</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card text-center p-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8e3248f4-dcdf-494d-a04a-abdad39c48ad.png" class="rounded-circle mx-auto mb-3 border border-3 border-dark" alt="Alex" width="120">
+                            <h5 class="fw-bold">Alex Thompson</h5>
+                            <p class="text-muted">Founder & Roaster</p>
+                            <p><em>"Brewing joy, one cup at a time."</em></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center p-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1a84f246-b0b9-4243-ae77-3198c3baa0ac.png" class="rounded-circle mx-auto mb-3 border border-3 border-dark" alt="Barista" width="120">
+                            <h5 class="fw-bold">Lead Barista</h5>
+                            <p class="text-muted">Lead Barista</p>
+                            <p><em>"Art in every espresso."</em></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center p-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ff572c8a-8f05-442e-b31d-8e5287138d4a.png" class="rounded-circle mx-auto mb-3 border border-3 border-dark" alt="Sam" width="120">
+                            <h5 class="fw-bold">Sam Rivera</h5>
+                            <p class="text-muted">Customer Relations</p>
+                            <p><em>"Making every visit feel like home."</em></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-              <div class="card text-center p-4">
-                <img
-                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1a84f246-b0b9-4243-ae77-3198c3baa0ac.png"
-                  class="rounded-circle mx-auto mb-3 border border-3 border-dark"
-                  alt="Barista" width="120">
-                <h5 class="fw-bold">Lead Barista</h5>
-                <p class="text-muted">Lead Barista</p>
-                <p><em>"Art in every espresso."</em></p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card text-center p-4">
-                <img
-                  src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ff572c8a-8f05-442e-b31d-8e5287138d4a.png"
-                  class="rounded-circle mx-auto mb-3 border border-3 border-dark"
-                  alt="Sam" width="120">
-                <h5 class="fw-bold">Sam Rivera</h5>
-                <p class="text-muted">Customer Relations</p>
-                <p><em>"Making every visit feel like home."</em></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Testimonials -->
-      <section class="py-5 Our-m-v text-white">
-        <div class="container">
-          <h2 class="ab-cup text-center display-5 fw-bold mb-5">What Our
-            Customers Say</h2>
-          <div class="row g-4">
-            <div class="col-md-4 ">
-              <blockquote class="bg-m-v p-4 rounded text-dark">
-                "The best espresso around—pure comfort in a cup!"<br>
-                <cite class="text-danger">- Jamie L., Regular</cite>
-              </blockquote>
+        <!-- Testimonials -->
+        <section class="py-5 Our-m-v text-white">
+            <div class="container">
+                <h2 class="ab-cup text-center display-5 fw-bold mb-5">What Our Customers Say</h2>
+                <div class="row g-4">
+                    <div class="col-md-4 ">
+                        <blockquote class="bg-m-v p-4 rounded text-dark">
+                            "The best espresso around—pure comfort in a cup!"<br>
+                            <cite class="text-danger">- Jamie L., Regular</cite>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-4 ">
+                        <blockquote class="bg-m-v p-4 rounded text-dark">
+                            "Ideal ambiance for productivity or downtime. Love their ethical practices."<br>
+                            <cite class="text-danger">- Taylor R., Enthusiast</cite>
+                        </blockquote>
+                    </div>
+                    <div class="col-md-4">
+                        <blockquote class="bg-m-v p-4 rounded text-dark">
+                            "As a coffee lover, their craftsmanship is unmatched—every visit delights!"<br>
+                            <cite class="text-danger">- Alex M., Blogger</cite>
+                        </blockquote>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 ">
-              <blockquote class="bg-m-v p-4 rounded text-dark">
-                "Ideal ambiance for productivity or downtime. Love their ethical practices."<br>
-                <cite class="text-danger">- Taylor R., Enthusiast</cite>
-              </blockquote>
-            </div>
-            <div class="col-md-4">
-              <blockquote class="bg-m-v p-4 rounded text-dark">
-                "As a coffee lover, their craftsmanship is unmatched—every visit delights!"<br>
-                <cite class="text-danger">- Alex M., Blogger</cite>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
 
     <!-- servises model start -->
@@ -410,88 +381,72 @@
 </div> -->
     <!-- servises modal end -->
     <footer>
-      <section class="mt-5" style="background-color: whitesmoke;">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <ul class="contact-info">
-                <h4 class="info">Our Address<i
-                    class="bi bi-geo-alt-fill"></i></h4>
-                <li class="address">Address : Corner-Cup Café <br> 456, FC Road,
-                  Shivajinagar <br> Pune, Maharashtra - 411005 <br> Phone: +91
-                  98765 43210 <br> Email: info@cornercup.com <br>
+        <section class="mt-5" style="background-color: whitesmoke;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul class="contact-info">
+                            <h4 class="info">Our Address<i class="bi bi-geo-alt-fill"></i></h4>
+                            <li class="address">Address : Corner-Cup Café <br> 456, FC Road, Shivajinagar <br> Pune, Maharashtra - 411005 <br> Phone: +91 98765 43210 <br> Email: info@cornercup.com <br>
 
-                </li>
-              </ul>
+                            </li>
+                        </ul>
 
-            </div>
+                    </div>
 
-            <div class="col-md-3">
+                    <div class="col-md-3">
 
-              <ul class="opening-hours">
-                <h4 class="connection">Connect With Us</h4>
-                <li class="connect">
-                  <p><i class="bi bi-envelope"></i> corner-cup@gmail.com
-                  </p>
-                </li>
-                <li class="connect">
-                  <p><i class="bi bi-envelope"></i> support@gmail.com
-                  </p>
-                </li>
-                <li class="connect">
-                  <h4>9 AM – 11 PM</h4>
-                </li>
-                <li class="connect">
-                  <p>Mon-Sun</p>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <h4 class="imp-links">Important Links</h4>
-              <ul class="quick-links">
-                <li><i class="bi bi-chevron-right"></i><a
-                    href="index.html">Home</a></li>
-                <li><i class="bi bi-chevron-right"></i><a
-                    href="menu.html">Menu</a></li>
-                <li><i class="bi bi-chevron-right"></i><a
-                    href="gallery.html">Gallery</a></li>
-                <li><i class="bi bi-chevron-right"></i><a
-                    href="about-us.html">About U</a></li>
-                <li><i class="bi bi-chevron-right"></i><a
-                    href="contact-us.html">Contact
+                        <ul class="opening-hours">
+                            <h4 class="connection">Connect With Us</h4>
+                            <li class="connect">
+                                <p><i class="bi bi-envelope"></i> corner-cup@gmail.com
+                                </p>
+                            </li>
+                            <li class="connect">
+                                <p><i class="bi bi-envelope"></i> support@gmail.com
+                                </p>
+                            </li>
+                            <li class="connect">
+                                <h4>9 AM – 11 PM</h4>
+                            </li>
+                            <li class="connect">
+                                <p>Mon-Sun</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="imp-links">Important Links</h4>
+                        <ul class="quick-links">
+                            <li><i class="bi bi-chevron-right"></i><a href="index.html">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="menu.html">Menu</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="gallery.html">Gallery</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="about-us.html">About U</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="contact-us.html">Contact
                     Us</a></li>
-                <li><i class="bi bi-chevron-right"></i><a
-                    href="order-online.html">Order
+                            <li><i class="bi bi-chevron-right"></i><a href="order-online.html">Order
                     Online</a></li>
 
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <h4 class="imp-links">Social Handle's</h4>
-              <ul class="quick-links">
-                <li><i class="bi bi-instagram"> </i><a
-                    href="https://www.instagram.com/">Instagram</a></li>
-                <li><i class="bi bi-facebook"> </i><a
-                    href="https://www.facebook.com/">Facebook</a></li>
-                <li><i class="bi bi-twitter-x"> </i><a
-                    href="https://www.twitter.com/">Twitter</a></li>
-                <li><i class="bi bi-youtube"> </i><a
-                    href="https://www.youtube.com/">Youtube</a></li>
-                <li><i class="bi bi-whatsapp"> </i><a
-                    href="whatsapp">Whatsapp</a></li>
-                <hr>
-                <p>Follow For Update's</p>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="imp-links">Social Handle's</h4>
+                        <ul class="quick-links">
+                            <li><i class="bi bi-instagram"> </i><a href="https://www.instagram.com/">Instagram</a></li>
+                            <li><i class="bi bi-facebook"> </i><a href="https://www.facebook.com/">Facebook</a></li>
+                            <li><i class="bi bi-twitter-x"> </i><a href="https://www.twitter.com/">Twitter</a></li>
+                            <li><i class="bi bi-youtube"> </i><a href="https://www.youtube.com/">Youtube</a></li>
+                            <li><i class="bi bi-whatsapp"> </i><a href="whatsapp">Whatsapp</a></li>
+                            <hr>
+                            <p>Follow For Update's</p>
 
-              </ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
-  </body>
+</body>
+
 </html>

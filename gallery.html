@@ -7,83 +7,74 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
     <style>
-        @import "https://unpkg.com/open-props@1.7.0/open-props.min.css"
-        layer(design.system);
-        @import "https://unpkg.com/open-props@1.7.0/normalize.dark.min.css"
-        layer(design.normalize);
+        @import "https://unpkg.com/open-props@1.7.0/open-props.min.css" layer(design.system);
+        @import "https://unpkg.com/open-props@1.7.0/normalize.dark.min.css" layer(design.normalize);
         @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200..900&family=Lobster&display=swap");
-
         .aboutus {
             font-family: 'Lato', sans-serif;
             padding: 10px;
             color: #66462f;
         }
-
-
+        
         body {
             overflow-x: hidden;
             background-color: white;
         }
-
         /* Navbar css start */
-
+        
         .navbar {
             background-color: whitesmoke !important;
         }
-
+        
         .navbar-brand {
             color: brown !important;
             font-size: 60px;
             font-family: 'Lobster Two';
         }
-
+        
         .nav-item a {
             font-size: 18px;
             color: black;
             font-family: 'Bebas Neue';
         }
-
+        
         .nav-link:hover {
             color: brown !important;
             text-decoration: underline;
         }
-        .logo{
+        
+        .logo {
             padding: 5px;
         }
-
         /* Navbar Css End */
-
+        
         section {
             display: grid;
             justify-content: center;
             padding-inline: var(--size-1);
             gap: var(--size-7);
         }
-
+        
         @layer components.gallery {
             .imageGallery {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 max-inline-size: var(--max-inline);
                 gap: calc(var(--border-size-1)*8);
-
                 & img {
                     aspect-ratio: var(--ratio-square);
                     max-inline-size: 100%;
                     background-image: var(--gradient-8);
                 }
-
                 &>button {
                     position: relative;
                     padding: 0;
-                    margin:0;
-                    border:none;
-
+                    margin: 0;
+                    border: none;
                     &::after {
                         content: "";
                         inset: 0;
@@ -97,26 +88,22 @@
                         opacity: 0;
                         transition: 0.2s ease;
                     }
-
                     &:hover::after {
                         opacity: 1;
                     }
                 }
             }
         }
-
+        
         @layer components.dialog {
             .dialog {
                 --sm-font-size: 0.875rem;
                 --size: min(80dvh, 100%);
                 --fade-duration: 1s;
-
                 inline-size: var(--size);
                 max-inline-size: 600px;
                 border-radius: unset;
-
                 padding: 0;
-
                 .dialog-container {
                     display: flex;
                     flex-direction: column;
@@ -124,7 +111,6 @@
                     position: relative;
                     overflow: hidden;
                 }
-
                 .controls {
                     position: fixed;
                     z-index: var(--layer-1);
@@ -134,7 +120,6 @@
                     justify-content: space-between;
                     opacity: 0;
                     animation: var(--animation-fade-in) var(--fade-duration) forwards;
-
                     & button {
                         inline-size: var(--size-8);
                         border-radius: var(--radius-round);
@@ -148,17 +133,14 @@
                         box-shadow: var(--shadow-1);
                         color: var(--stone-1);
                         transition: color 0.2s ease;
-
-                        @media (width > 600px) {
+                        @media (width>600px) {
                             font-size: 3rem;
                         }
-
                         &:hover {
                             color: var(--stone-6);
                         }
                     }
                 }
-
                 .closeDialog {
                     position: fixed;
                     inset-block-start: var(--size-2);
@@ -169,49 +151,40 @@
                     font-size: var(--font-size-5);
                     padding: 0;
                 }
-
                 .carousel {
                     display: grid;
                     grid-auto-flow: column;
                     grid-auto-columns: var(--size);
                     inline-size: var(--size);
                     block-size: var(--size);
-
                     /* Hide scrollbar */
                     -ms-overflow-style: none;
                     /* IE and Edge */
                     scrollbar-width: none;
-
                     /* Firefox */
                     &::-webkit-scrollbar {
                         display: none;
                     }
-
                     & img {
                         inline-size: 100%;
                         block-size: 100%;
                     }
-
                     &::after {
                         content: "";
                         position: absolute;
                         inset: 0;
-
                         background-color: var(--surface-1);
-
                         background-image: url(https://raw.githubusercontent.com/mobalti/open-props-interfaces/7d7d59bdb5dca71ec7280b88876b45d31cbf3c4a/image-gallery/images/bars-rotate-fade.svg);
                         background-repeat: no-repeat;
                         background-position: center;
                         z-index: var(--layer-3);
-
                         /* <Suspense> */
-                        animation: var(--animation-fade-out) var(--fade-duration) forwards,
-                            var(--fade-duration) op-hide 1s forwards;
+                        animation: var(--animation-fade-out) var(--fade-duration) forwards, var(--fade-duration) op-hide 1s forwards;
                     }
                 }
             }
         }
-
+        
         @layer animation.base {
             @keyframes op-hide {
                 100% {
@@ -219,162 +192,145 @@
                 }
             }
         }
-
+        
         @layer animation.scroll-driven {
             body {
                 timeline-scope: --carousel;
             }
-
             #carousel {
                 overflow-x: scroll;
                 scroll-snap-type: x mandatory;
                 overscroll-behavior: contain;
                 scroll-behavior: smooth;
-
                 scroll-timeline: --carousel inline;
-
                 >* {
                     scroll-snap-align: center;
                 }
             }
-
             .controls-btn {
                 animation-duration: auto;
                 animation-fill-mode: forwards;
                 animation-timeline: --carousel;
                 animation-timing-function: linear;
-
                 &.preview {
                     animation-name: preview;
                 }
-
                 &.next {
                     animation-name: next;
                 }
             }
-
             @keyframes preview {
                 from {
                     visibility: hidden;
                 }
             }
-
             @keyframes next {
                 to {
                     visibility: hidden;
                 }
             }
         }
-
         /*main section css end*/
         /* Footer Css Start */
-
+        
         .contact-info {
             list-style: none;
             color: black;
             font-family: serif;
         }
-
+        
         .opening-hours {
             list-style: none;
             color: black;
             font-family: serif;
         }
-
+        
         .quick-links {
             list-style: none;
             font-family: serif;
-
         }
-
+        
         .quick-links a {
             text-decoration: none;
             color: black;
         }
-
+        
         .quick-links a:hover {
             text-decoration: underline;
             color: #66462f;
         }
-
+        
         .imp-links {
             font-family: serif;
         }
-
+        
         footer {
+            margin-bottom: 0% !important;
             background-color: whitesmoke;
         }
-
+        
         .social-media {
             display: flex;
             gap: 15px;
             color: black;
         }
-
+        
         .bi-instagram {
             color: orangered;
         }
-
+        
         .bi-facebook {
             color: blue;
         }
-
+        
         .bi-youtube {
             color: red;
         }
-
+        
         .bi-whatsapp {
             color: green;
         }
-
+        
         .connection {
             padding: 10px;
             color: #66462f;
         }
-
-
-
+        
         .info {
-            font-family: lobster Two;
             padding: 10px;
             text-align: center;
             color: #66462f;
         }
-
+        
         .imp-links {
             padding: 10px;
             /* text-align: center; */
             color: #66462f;
         }
-
+        
         .bg-img {
             height: auto;
         }
-
+        /* Footer Css End */
         /* Footer Css End */
-
         /* Extra Small Devices up to 576px */
-
+        
         @media (max-width: 576px) {
             .navbar-brand {
                 font-size: 28px;
                 /* Navbar brand smaller */
             }
-
             .nav-item a {
                 font-size: 14px;
             }
-
             .bg-img video {
                 width: 100%;
                 height: auto;
             }
-
             .img-info {
                 display: none;
                 /* Hide side image on small screens */
             }
-
             .aboutus,
             .cafe-info,
             .cafe-info2 {
@@ -382,7 +338,6 @@
                 margin: 10px auto;
                 font-size: 16px;
             }
-
             .button,
             .button2 {
                 display: block;
@@ -391,148 +346,125 @@
                 font-size: 14px;
                 padding: 10px;
             }
-
             .we-are {
                 text-align: center;
                 font-size: 20px;
                 margin: 15px 0;
             }
-
             .count,
             .count2,
             .countries,
             .countries2 {
                 text-align: center;
             }
-
             .cc-info {
                 font-size: 14px;
                 margin: 10px;
                 text-align: center;
             }
-
             .cc-img {
                 display: block;
                 margin: 0 auto;
                 width: 80%;
                 height: auto;
             }
-
             .varities {
                 flex-direction: column;
                 text-align: center;
                 margin: 10px 0;
             }
-
             .varities ul {
                 padding: 0;
             }
-
             footer {
                 text-align: center;
             }
-
             /* .social-media {
                 justify-content: center;
             } */
         }
-
         /* Small Devices (Tablets) - 577px to 768px */
-
+        
         @media (min-width: 577px) and (max-width: 768px) {
             .navbar-brand {
                 font-size: 32px;
             }
-
             .nav-item a {
                 font-size: 15px;
             }
-
             .aboutus,
             .cafe-info {
                 text-align: center;
                 font-size: 18px;
             }
-
             .button,
             .button2 {
                 font-size: 15px;
                 padding: 12px;
             }
-
             .cc-info {
                 font-size: 16px;
                 margin: 15px;
             }
-
             .varities {
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 10px;
             }
-
             .varities ul {
                 margin: 10px;
             }
-
             .cc-img {
                 width: 70%;
                 margin: 10px auto;
                 display: block;
             }
         }
-
         /* Medium Devices (Laptops) - 769px to 992px */
-
+        
         @media (min-width: 769px) and (max-width: 992px) {
             .navbar-brand {
                 font-size: 36px;
             }
-
             .aboutus {
                 font-size: 24px;
             }
-
             .cafe-info {
                 font-size: 18px;
             }
-
             .cc-info {
                 font-size: 18px;
             }
-
             .cc-img {
                 width: 80%;
                 margin: 0 auto;
             }
         }
-
         /* Large Devices (Desktops) - 993px and above */
-
+        
         @media (min-width: 993px) {
             .navbar-brand {
                 font-size: 40px;
             }
-
             .cc-img {
                 width: 400px;
             }
         }
-
+        
         main {
             margin-top: 4rem;
         }
-
+        
         .ri-close-line:hover {
             color: white;
             transition: all;
         }
-
+        
         .gallery-item:hover img {
             transform: scale(1.1);
             filter: brightness(0.7);
         }
-
+        
         .gallery-item:hover .gallery-caption {
             opacity: 2;
         }
@@ -543,14 +475,14 @@
 <body>
     <!-- header start -->
     <header>
-      <nav class="navbar navbar-expand-lg mt-0 border-body sticky-top ">
+        <nav class="navbar navbar-expand-lg mt-0 border-body sticky-top ">
             <div class="container-fluid ">
-                    
-               <img class="logo" src="images/logo.png" alt="" width="250px">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-                    
+
+                <img class="logo" src="images/logo.png" alt="" width="250px">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0px">
-                        
+
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
@@ -558,22 +490,22 @@
                             <a class="nav-link" href="menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="our-products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About
-                                    Us</a>
+                            <a class="nav-link" href="about-us.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact-us.html">Contact Us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="our-products.html">Our Products</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav>
     </header>
     <!-- header     end -->
 
@@ -670,66 +602,42 @@
                 <div class="dialogContainer">
                     <div class="carousel" id="carousel">
                         <picture>
-                            <img width="309" height="309"
-                                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=400&fit=crop"
-                                alt="Coffee" loading="lazy" />
+                            <img width="309" height="309" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=400&fit=crop" alt="Coffee" loading="lazy" />
                         </picture>
                         <picture>
-                            <img width="309" height="309"
-                                src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400&h=400&fit=crop"
-                                alt="Cafe Interior" loading="lazy" />
+                            <img width="309" height="309" src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400&h=400&fit=crop" alt="Cafe Interior" loading="lazy" />
                         </picture>
                         <picture>
-                            <img width="309" height="309"
-                                src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=400&h=400&fit=crop"
-                                alt="Latte Art" loading="lazy" />
+                            <img width="309" height="309" src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=400&h=400&fit=crop" alt="Latte Art" loading="lazy" />
                         </picture>
                         <picture>
-                            <img width="309" height="309"
-                                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=400&fit=crop"
-                                alt="Cake" loading="lazy" />
+                            <img width="309" height="309" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=400&fit=crop" alt="Cake" loading="lazy" />
                         </picture>
                         <picture>
-                            <img width="309" height="309"
-                                src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=400&h=400&fit=crop"
-                                alt="Latte Art" loading="lazy" />
+                            <img width="309" height="309" src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=400&h=400&fit=crop" alt="Latte Art" loading="lazy" />
                         </picture>
                         <picture>
-                            <img width="309" height="309"
-                                src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&h=400&fit=crop"
-                                alt="Cookies" loading="lazy" />
+                            <img width="309" height="309" src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&h=400&fit=crop" alt="Cookies" loading="lazy" />
                         </picture>
                         <picture>
-                            <img width="309" height="309"
-                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-7.webp"
-                                alt="A cute cat" loading="lazy" />
+                            <img width="309" height="309" src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-7.webp" alt="A cute cat" loading="lazy" />
                         </picture>
 
                         <picture>
-                            <img width="309" height="309"
-                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-8.webp"
-                                alt="A cute cat" loading="lazy" />
+                            <img width="309" height="309" src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-8.webp" alt="A cute cat" loading="lazy" />
                         </picture>
 
                         <picture>
-                            <img width="309" height="309"
-                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-9.webp"
-                                alt="A cute cat" loading="lazy" />
+                            <img width="309" height="309" src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-9.webp" alt="A cute cat" loading="lazy" />
                         </picture>
                         <picture>
-                            <img width="309" height="309"
-                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-10.webp"
-                                alt="A cute cat" loading="lazy" />
+                            <img width="309" height="309" src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-10.webp" alt="A cute cat" loading="lazy" />
                         </picture>
                         <picture>
-                            <img width="309" height="309"
-                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-11.webp"
-                                alt="A cute cat" loading="lazy" />
+                            <img width="309" height="309" src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-11.webp" alt="A cute cat" loading="lazy" />
                         </picture>
                         <picture>
-                            <img width="309" height="309"
-                                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-12.webp"
-                                alt="A cute cat" loading="lazy" />
+                            <img width="309" height="309" src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/image-gallery/images/img-12.webp" alt="A cute cat" loading="lazy" />
                         </picture>
                     </div>
                     <div class="controls">
@@ -750,6 +658,7 @@
     </main>
 
     <!-- footer start -->
+
     <footer>
         <section class="mt-5">
             <div class="container">
@@ -757,23 +666,22 @@
                     <div class="col-md-3">
                         <ul class="contact-info">
                             <h4 class="info">Our Address<i class="bi bi-geo-alt-fill"></i></h4>
-                            <li class="address">Address : Corner-Cup Café <br />
-                                456, FC Road, Shivajinagar <br />
-                                Pune, Maharashtra - 411005 <br />
-                                Phone: +91 98765 43210 <br />
-                                Email: info@cornercup.com <br />
+                            <li class="address">Address : Corner-Cup Café
+                                <br> 456, FC Road, Shivajinagar <br> Pune, Maharashtra - 411005 <br> Phone: +91 98765 43210 <br> Email: info@cornercup.com <br>
                             </li>
                         </ul>
                     </div>
 
                     <div class="col-md-3">
+
                         <ul class="opening-hours">
                             <h4 class="connection">Connect With Us</h4>
                             <li class="connect">
-                                <p><i class="bi bi-envelope"></i> corner-cup@gmail.com </p>
+                                <p><i class="bi bi-envelope"></i> corner-cup@gmail.com</p>
                             </li>
                             <li class="connect">
-                                <p><i class="bi bi-envelope"></i> support@gmail.com </p>
+                                <p><i class="bi bi-envelope"></i> support@gmail.com
+                                </p>
                             </li>
                             <li class="connect">
                                 <h4>9 AM – 11 PM</h4>
@@ -790,28 +698,33 @@
                             <li><i class="bi bi-chevron-right"></i><a href="menu.html">Menu</a></li>
                             <li><i class="bi bi-chevron-right"></i><a href="gallery.html">Gallery</a></li>
                             <li><i class="bi bi-chevron-right"></i><a href="about-us.html">About U</a></li>
-                            <li><i class="bi bi-chevron-right"></i><a href="contact-us.html">Contact Us</a></li>
-                            <li><i class="bi bi-chevron-right"></i><a href="order-online.html">Order Online</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="contact-us.html">Contact
+                                        Us</a></li>
+                            <li><i class="bi bi-chevron-right"></i><a href="order-online.html">Order
+                                        Online</a></li>
+
                         </ul>
                     </div>
                     <div class="col-md-3">
                         <h4 class="imp-links">Social Handle's</h4>
                         <ul class="quick-links">
-                            <li><i class="bi bi-instagram"> </i><a href="https://www.instagram.com/">Instagram</a>
-                            </li>
+                            <li><i class="bi bi-instagram"> </i><a href="https://www.instagram.com/">Instagram</a></li>
                             <li><i class="bi bi-facebook"> </i><a href="https://www.facebook.com/">Facebook</a></li>
                             <li><i class="bi bi-twitter-x"> </i><a href="https://www.twitter.com/">Twitter</a></li>
                             <li><i class="bi bi-youtube"> </i><a href="https://www.youtube.com/">Youtube</a></li>
                             <li><i class="bi bi-whatsapp"> </i><a href="whatsapp">Whatsapp</a></li>
-                            <hr />
+                            <hr>
                             <p>Follow For Update's</p>
+
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
     </footer>
+
     <!-- footer end -->
+
     <script>
         const dialog = document.querySelector("#dialog");
         const images = document.querySelectorAll(".imageGallery button");
@@ -848,9 +761,7 @@
 
         closeDialogBtn.addEventListener("click", () => closeDialog());
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 
 </html>
