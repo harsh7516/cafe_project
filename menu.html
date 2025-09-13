@@ -435,16 +435,51 @@
             .card-text {
                 font-size: 0.9rem;
             }
+            /* Extra Small Devices (up to 575px) */
+            @media (max-width: 575px) {
+                .h1style {
+                    font-size: 1.5rem;
+                }
+                .coffe-heading {
+                    font-size: 1.1rem;
+                }
+                .button {
+                    width: 100%;
+                    font-size: 0.9rem;
+                    padding: 8px;
+                }
+                .card-body {
+                    padding: 10px;
+                }
+                .price,
+                .Breakfast-price,
+                .lunch-price,
+                .dessert-price {
+                    font-size: 0.9rem;
+                    height: 25px;
+                    width: 70px;
+                }
+                .card-text {
+                    font-size: 0.8rem;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg mt-0 border-body sticky-top ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-0 border-body sticky-top">
             <div class="container-fluid ">
 
                 <img class="logo" src="images/logo.png" alt="" width="250px">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0px">
