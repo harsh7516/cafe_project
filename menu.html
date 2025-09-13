@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link rel="icon" type="img/png" href="images/beanicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -24,7 +25,6 @@
         
         .nav-link:hover {
             color: brown !important;
-            text-decoration: underline;
         }
         
         .logo {
@@ -155,6 +155,20 @@
             font-size: 15px;
             font-family: Comic Sans MS;
             color: blue;
+            margin-left: 10px;
+        }
+        
+        .popular-first {
+            height: 30px;
+            width: 83px;
+            background-color: rgb(228, 119, 119);
+            border-radius: 100px;
+            align-items: center;
+            padding-inline: 20px;
+            padding-right: 8px;
+            font-size: 15px;
+            font-family: Comic Sans MS;
+            color: rgb(145, 38, 38);
             margin-left: 10px;
         }
         
@@ -374,92 +388,194 @@
             height: auto;
         }
         /* Footer Css End */
-        /* Medium devices (tablets, 768px to 1199px) */
+        /* ===============================
+   
+     /* ----------------- Extra Small Devices (Phones, up to 576px) ----------------- */
         
-        @media (min-width: 768px) and (max-width: 1199px) {
-            .col-md-4 {
-                flex: 0 0 50%;
-                max-width: 50%;
-            }
+        @media (max-width: 576px) {
             .h1style {
-                font-size: 2.5rem;
+                font-size: 24px;
+                /* smaller menu heading */
             }
             .coffe-heading {
-                font-size: 2rem;
+                font-size: 20px;
+            }
+            .coffee-para {
+                font-size: 14px;
+                padding: 0 10px;
+            }
+            .col-md-4 {
+                flex: 0 0 100%;
+                max-width: 100%;
+                /* cards full width */
+                margin-bottom: 15px;
             }
             .button {
-                margin: 0 8px 10px 8px;
+                font-size: 14px;
+                padding: 8px;
+                margin: 5px 0;
+                display: block;
+                /* stack buttons */
+                width: 100%;
+            }
+            .card-body {
+                padding: 12px;
             }
             .price,
             .Breakfast-price,
             .lunch-price,
             .dessert-price {
-                height: 30px;
-                width: 90px;
+                font-size: 14px;
+                height: 28px;
+                width: 80px;
+            }
+            .card-text {
+                font-size: 13px;
             }
         }
-        /* Small devices (phones, less than 768px) */
+        /* ----------------- Small Devices (Tablets, 577px to 768px) ----------------- */
         
-        @media (max-width: 767px) {
-            .col-md-4 {
-                flex: 0 0 100%;
-                max-width: 100%;
-            }
+        @media (min-width: 577px) and (max-width: 768px) {
             .h1style {
-                font-size: 2rem;
+                font-size: 28px;
             }
             .coffe-heading {
-                font-size: 1.5rem;
+                font-size: 22px;
+            }
+            .coffee-para {
+                font-size: 15px;
+            }
+            .button {
+                font-size: 15px;
+                padding: 10px 14px;
+                margin: 8px;
+            }
+            .col-md-4 {
+                flex: 0 0 50%;
+                /* 2 cards per row */
+                max-width: 50%;
+                margin-bottom: 20px;
+            }
+            .card-text {
+                font-size: 14px;
+            }
+        }
+        /* ----------------- Medium Devices (Laptops, 769px to 992px) ----------------- */
+        
+        @media (min-width: 769px) and (max-width: 992px) {
+            .h1style {
+                font-size: 32px;
+            }
+            .coffe-heading {
+                font-size: 26px;
+            }
+            .coffee-para {
+                font-size: 16px;
+            }
+            .button {
+                font-size: 16px;
+                padding: 12px 16px;
+            }
+            .col-md-4 {
+                flex: 0 0 33.33%;
+                /* 3 cards per row */
+                max-width: 33.33%;
+            }
+            .card-text {
+                font-size: 15px;
+            }
+        }
+        /* ----------------- Large Devices (Desktops, ≥993px) ----------------- */
+        
+        @media (min-width: 993px) {
+            .h1style {
+                font-size: 36px;
+            }
+            .coffe-heading {
+                font-size: 28px;
+            }
+            .coffee-para {
+                font-size: 18px;
+            }
+            .button {
+                font-size: 16px;
+                padding: 14px 18px;
+            }
+            .col-md-4 {
+                flex: 0 0 33.33%;
+                /* keep 3 cards per row */
+                max-width: 33.33%;
+            }
+            .card-text {
+                font-size: 16px;
+            }
+        }
+        /* ===============================
+   💻 Medium Devices (Laptops)
+   Width: 769px to 992px
+================================ */
+        
+        @media (min-width: 769px) and (max-width: 992px) {
+            .col-md-4 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            .h1style {
+                font-size: 36px;
+            }
+            .coffe-heading {
+                font-size: 28px;
             }
             .button {
                 display: none;
                 margin: 10px 0;
             }
             .card-body {
-                padding: 15px;
+                padding: 18px;
             }
             .price,
             .Breakfast-price,
             .lunch-price,
             .dessert-price {
-                font-size: 1.2rem;
-                height: 30px;
-                width: 90px;
+                font-size: 18px;
             }
             .card-text {
-                font-size: 0.9rem;
+                font-size: 15px;
             }
-            /* Extra Small Devices (up to 575px) */
-            @media (max-width: 575px) {
-                .h1style {
-                    font-size: 1.5rem;
-                }
-                .coffe-heading {
-                    font-size: 1.1rem;
-                }
-                .button {
-                    width: 100%;
-                    font-size: 0.9rem;
-                    padding: 8px;
-                }
-                .card-body {
-                    padding: 10px;
-                }
-                .price,
-                .Breakfast-price,
-                .lunch-price,
-                .dessert-price {
-                    font-size: 0.9rem;
-                    height: 25px;
-                    width: 70px;
-                }
-                .card-text {
-                    font-size: 0.8rem;
-                }
-                img {
-                    width: 100%;
-                    height: auto;
-                }
+        }
+        /* ===============================
+   🖥️ Large Devices (Desktops)
+   Width: 993px and above
+================================ */
+        
+        @media (min-width: 993px) {
+            .col-md-4 {
+                flex: 0 0 33.33%;
+                max-width: 33.33%;
+            }
+            .h1style {
+                font-size: 40px;
+            }
+            .coffe-heading {
+                font-size: 30px;
+            }
+            .button {
+                display: inline-block;
+            }
+            .card-body {
+                padding: 20px;
+            }
+            .price,
+            .Breakfast-price,
+            .lunch-price,
+            .dessert-price {
+                font-size: 18px;
+            }
+            .card-text {
+                font-size: 16px;
+            }
+            .card-title {
+                font-size: 19px;
             }
         }
     </style>
@@ -681,7 +797,7 @@
                                     <h5 class="card-title">Milk Tea</h5>
                                     <h5 class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 20</h5>
                                 </div>
-                                <p class="card-text">A comforting blend of strong brewed tea and creamy milk, perfect balance of richness and sweetness.</p>
+                                <p class="card-text">A comforting blend of strong brewed tea & creamy milk,perfect balance of richness and sweetness.</p>
                                 <div class="flex-content">
                                     <p class="star-rateing">
                                         <i class="fa fa-star"></i>
@@ -1009,15 +1125,15 @@
                                 </div>
                                 <p class="card-text">A decadent chocolate delight with a warm, gooey center. Perfect for satisfying your sweet cravings with every bite.</p>
                                 <div class="flex-content">
-                                    <p class="star-rateing">
+                                    <!-- <p class="star-rateing">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star-half-alt"></i>
 
-                                    </p>
-                                    <div class="popular">
+                                    </p> -->
+                                    <div class="popular-first">
                                         <p class="card-text">popular
                                         </p>
                                     </div>
